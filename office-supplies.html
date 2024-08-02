@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFPF|eco-friendly products finder website</title>
+    <link rel="icon" href="EFPFlogo.png">
+    <link rel="stylesheet" href="product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b1e10af6f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="container-head">
+            <div><a href="" class="logo-div"><img src="EFPFlogo.png" height="50px" width="50px" class="logo">
+                    <p class="logo-text"> EFPF </p>
+                </a></div>
+            <div>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ba9717;"></i>
+                </div>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <h2 class="text-center">Shopping Cart</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </tbody>
+                    </table>
+                    <div class="text-end">
+                        <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+                    </div>
+                    <div class="text-end mt-2">
+                        <button class="btn btn-primary">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="product-back">
+            <div class="container ">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://th.bing.com/th/id/R.2e7c38ad5f1f03ba830b96e076e4c139?rik=IgTQTEqLoiMKEQ&riu=http%3a%2f%2fecoluxeproduct.com%2fwp-content%2fuploads%2f2022%2f04%2fEcofriendly-Office-Supplies-1024x575-1.jpg&ehk=HbiQ%2f8gR9GY5FIsC8q5pllJ%2bsW%2fwmoKWO9gh5sQym3E%3d&risl=&pid=ImgRaw&r=0"
+                                style="width: 100%; height: 100%;" alt="product">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+                                <p>Office supplies</p>
+                                <p class="h1" style=" color: rgb(222, 202, 152);">Office Supplies</p>
+                                <h3 style="font-size: 25px;">
+                                    Office supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <a class="btn btn-primary" href="#products"
+                                    style="background-color: rgb(179, 140, 176); width: 120px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">See Products</a>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Description</p>
+                                <p class="card-text" style="font-size: 18px;">By embracing eco-friendly office supplies
+                                    and
+                                    promoting sustainability in the workplace, businesses can make a significant
+                                    positive
+                                    impact on the environment. Reducing carbon footprint, conserving natural resources,
+                                    minimizing waste generation, and improving indoor air quality are just a few of the
+                                    benefits of adopting eco-friendly practices.
+                                    <br>
+                                    Office supplies are helpful because they organize and manage documents, facilitate
+                                    communication and collaboration, support record-keeping, improve presentation and
+                                    professionalism, boost employee morale, enable remote work, and enhance creativity
+                                    and
+                                    productivity
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 5px double rgb(0, 82, 100);">
+        <h2 class="product-heading">PRODUCTS</h2>
+
+
+        <div class="item-body-back">
+            <div class="container div-height item-back" id="products">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://m.media-amazon.com/images/I/61YNumtA4tL._SX679_.jpg"
+                                style="width: 100%; height: 100%;" alt="product">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+                                <p class="h1" style=" color: rgb(19, 107, 25);">Recycled Paper</p>
+                                <h3 style="font-size: 25px;">
+                                    Office Supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <div>
+                                    <span class="a-price-symbol">₹</span>
+                                    <span class="a-price-whole" style="font-size: 25px; color: black;">200</span>
+                                </div>
+                                <a class="btn btn-primary" href="https://amzn.in/d/0ijRVuHG"
+                                    style="background-color: rgb(218, 81, 57);; width: 100px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">BUY NOW</a>
+
+                                <button class="btn btn-primary add-to-cart" data-name="Recycled paper" data-price="200"
+                                    data-image="https://m.media-amazon.com/images/I/61YNumtA4tL._SX679_.jpg"
+                                    style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                    To Cart</button>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Product Description</p>
+                                <p class="card-text">Handmade Sheets 10 assorted colours Sheet size A4 Great for all art
+                                    and
+                                    craft projects Assorted Colours.
+                                    Ready to decorate sheets, can be easily cut in desired shapes.
+                                    Best for scrapbooking, hobby crafts, project making, decorations.
+                                    Perfect for schools and teachers or people that need for card making, art, craft
+                                    project, scrapbooking, floristy, origami flowers, mounting, book Binding, block
+                                    Printing, rubbing, stamping, kite, lantern, window or screen covering and collages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                <div class="content">
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://www.rescript.in/assets/uploads/inventory/pro_63d8bf2d089237845.jpg"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Recycled copier
+                                papers
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.359</li>
+                            <li class="list-group-item" style="text-align: center;"> <a class="card-link add-to-cart"
+                                    data-name="recycled copier papers" data-price="359"
+                                    data-image="https://www.rescript.in/assets/uploads/inventory/pro_63d8bf2d089237845.jpg"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81mo8fJSpbL._AC_SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">printworks
+                                printing paper
+                            <li class="list-group-item" style="text-align: center;">Rs.795</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="printworks printing paper" data-price="795"
+                                    data-image="https://m.media-amazon.com/images/I/81mo8fJSpbL._AC_SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/716Mi7VYqwL._AC_SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Printer paper
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.1,813</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="printimg paper"
+                                    data-price="1813"
+                                    data-image="https://m.media-amazon.com/images/I/716Mi7VYqwL._AC_SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81xsPKt2j+L._AC_SY550_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">multi purpose
+                                paper</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.2,343</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="multi purpose paper"
+                                    data-price="2343"
+                                    data-image="https://m.media-amazon.com/images/I/81xsPKt2j+L._AC_SY550_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://images.albertsons-media.com/is/image/ABS/960197573-ECOM?$ng-ecom-pdp-desktop$&defaultImage=Not_Available"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Multi-use white
+                                paper</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.543</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="multi-use white paper" data-price="543"
+                                    data-image="https://images.albertsons-media.com/is/image/ABS/960197573-ECOM?$ng-ecom-pdp-desktop$&defaultImage=Not_Available"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-body-back">
+            <div class="container div-height item-back">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://m.media-amazon.com/images/I/81kspxFxEfL._SX522_.jpg"
+                                style="width: 100%; height: 100%; ;" alt="product" ;>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+
+                                <p class="h1" style=" color: rgb(19, 107, 25);">Reusable Notebooks</p>
+                                <h3 style="font-size: 25px;">
+                                    Office Supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <div>
+                                    <span class="a-price-symbol">₹</span>
+                                    <span class="a-price-whole" style="font-size: 25px; color: black;">349</span>
+                                </div>
+                                <a class="btn btn-primary" href="https://amzn.in/d/08jUsYds"
+                                    style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">BUY NOW</a>
+
+                                <button class="btn btn-primary add-to-cart" data-name="Reusable Notebooks"
+                                    data-price="349"
+                                    data-image="https://m.media-amazon.com/images/I/81kspxFxEfL._SX522_.jpg"
+                                    style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                    To Cart</button>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Product Description</p>
+                                <p class="card-text"> Made from FSC Certified wood-free brown paper, this notebook
+                                    contributes to forest conservation initiatives and biodegradability, fostering
+                                    sustainability. The distinct texture of the FSC Certified wood-free brown paper
+                                    enhances
+                                    ink absorption, ensuring a smooth and smudge-free writing experience. Crafted from
+                                    100%
+                                    tree-free recycled fibers and free from bleaching chemicals, the production process
+                                    of
+                                    this notebook emphasizes environmental sustainability and minimizes adverse effects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                <div class="content">
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/714CTe+54oL._SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Stone paper
+                                notebook
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.996</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="Stone paper notebook"
+                                    data-price="996"
+                                    data-image="https://m.media-amazon.com/images/I/714CTe+54oL._SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/71PiMr7rywL._SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Erasable Notebook
+                            <li class="list-group-item" style="text-align: center;">Rs.399</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="Erasable Notebook"
+                                    data-price="399"
+                                    data-image="https://m.media-amazon.com/images/I/71PiMr7rywL._SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/71hoDknFeHL._SY450_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Nara Reusable
+                                Notebook</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.499</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="nara-reusable notebook" data-price="499"
+                                    data-image="https://m.media-amazon.com/images/I/71hoDknFeHL._SY450_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/51C49QPtQSL._SY450_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">amici smart
+                                resuable notebook</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.2,099</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="amici smart notebook"
+                                    data-price="2099"
+                                    data-image="https://m.media-amazon.com/images/I/51C49QPtQSL._SY450_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81tKqfvLutL._SY425_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Notepad sketch
+                                book </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.299</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="notepad sketch book"
+                                    data-price="299"
+                                    data-image="https://m.media-amazon.com/images/I/81tKqfvLutL._SY425_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="item-body-back">
+            <div class="container div-height item-back">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://m.media-amazon.com/images/I/41UzvQ4LMzL.jpg"
+                                style="width: 100%; height: 100%;" alt="product">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+                                <p class="h1" style=" color: rgb(19, 107, 25);">Compostable Packaging Material</p>
+                                <h3 style="font-size: 25px;">
+                                    Office Supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <div>
+                                    <span class="a-price-symbol">₹</span>
+                                    <span class="a-price-whole" style="font-size: 25px; color: black;">349</span>
+                                </div>
+                                <a class="btn btn-primary" href="https://amzn.in/d/0dLVaXTp"
+                                    style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">BUY NOW</a>
+
+                                <button class="btn btn-primary add-to-cart" data-name="compostable packaging material"
+                                    data-price="349" data-image="https://m.media-amazon.com/images/I/41UzvQ4LMzL.jpg"
+                                    style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                    To Cart</button>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Product Description</p>
+                                <p class="card-text">Made from strong 100GSM kraft paper, this 28 inch x 20 meter paper
+                                    roll
+                                    provides a sturdy wrapping solution. As an unbleached paper product, it uses less
+                                    harsh
+                                    chemicals and energy in production to lessen environmental impact. At 20 meters
+                                    long,
+                                    this standard sized roll offers excellent value with enough paper to wrap numerous
+                                    packages or items before needing replacement. Beyond gift wrapping, kraft paper is
+                                    ideal
+                                    for crafts, shipping, storage, bags, boxes, and more creative reuse projects around
+                                    the
+                                    home or office.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                <div class="content">
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/61l3XS9DxCL._SY450_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">paper bag
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.294</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="paper bag"
+                                    data-price="294"
+                                    data-image="https://m.media-amazon.com/images/I/61l3XS9DxCL._SY450_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/51HlYz3UW2L._SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Papper pouch
+                            <li class="list-group-item" style="text-align: center;">Rs.248</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="paper pouch"
+                                    data-price="248"
+                                    data-image="https://m.media-amazon.com/images/I/51HlYz3UW2L._SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/51O9AfwtaPL._AC_UL480_FMwebp_QL65_.jpg"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Packing box</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.349</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="packing box"
+                                    data-price="349"
+                                    data-image="https://m.media-amazon.com/images/I/51O9AfwtaPL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/51icGXHOxjL._SX466_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">paper tape for
+                                packing</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.1,149</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="paper tape"
+                                    data-price="1149"
+                                    data-image="https://m.media-amazon.com/images/I/51icGXHOxjL._SX466_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81TAPlWBiWL._SX569_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Bubble Wrap
+                                Packing
+                                roll</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.249</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="bubble wrap packing roll" data-price="249"
+                                    data-image="https://m.media-amazon.com/images/I/81TAPlWBiWL._SX569_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-body-back">
+            <div class="container div-height item-back">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://m.media-amazon.com/images/I/51If1b9Ns+L._SY450_.jpg"
+                                style="width: 100%; height: 100%;" alt="product">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+                                <p class="h1" style=" color: rgb(19, 107, 25);">Eco-friendly Pens </p>
+                                <h3 style="font-size: 25px;">
+                                    Office supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <div>
+                                    <span class="a-price-symbol">₹</span>
+                                    <span class="a-price-whole" style="font-size: 25px; color: black;">499</span>
+                                </div>
+                                <a class="btn btn-primary" href="https://amzn.in/d/0ddfVwTX"
+                                    style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">BUY NOW</a>
+
+                                <button class="btn btn-primary add-to-cart" data-name="eco-friendly pens"
+                                    data-price="499"
+                                    data-image="https://m.media-amazon.com/images/I/51If1b9Ns+L._SY450_.jpg"
+                                    style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                    To Cart</button>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Product Description</p>
+                                <p class="card-text">50 pens with smooth-writing blue ink, 1.0mm NSTC, encased in 80%
+                                    biodegradable materials. Made with 100% recycled, biodegradable paper and 4x less
+                                    plastic for a non-slip grip. Perfect for offices, homes, or anyone aiming to reduce
+                                    environmental impact. Designed in India, these pens encourage recycling and
+                                    planting,
+                                    supporting a cleaner planet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                <div class="content">
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81v7bpiTIrL._SY450_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Round stic ball
+                                point
+                                pen
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.1,715</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="round stic ball pen"
+                                    data-price="1715"
+                                    data-image="https://m.media-amazon.com/images/I/81v7bpiTIrL._SY450_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/81ZTmyhz2oL._SY450_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Bottle to pen
+                                refillable
+                            <li class="list-group-item" style="text-align: center;">Rs.4278</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="bottle to pen reffillable" data-price="4278"
+                                    data-image="https://m.media-amazon.com/images/I/81ZTmyhz2oL._SY450_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://i.etsystatic.com/19893040/r/il/0ddcd7/3907960016/il_794xN.3907960016_ej9x.jpg"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Eco-pens set</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.608</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="eco-pens set"
+                                    data-price="608"
+                                    data-image="https://i.etsystatic.com/19893040/r/il/0ddcd7/3907960016/il_794xN.3907960016_ej9x.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://m.media-amazon.com/images/I/41ukRzqQKqL._SY741_.jpg" class="card-img-top"
+                            alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wooden Ball point
+                                pen
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.199</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="wooden ball point pen" data-price="199"
+                                    data-image="https://m.media-amazon.com/images/I/41ukRzqQKqL._SY741_.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px" src="https://m.media-amazon.com/images/I/31fSEV3gf8L.jpg"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">plantable seed
+                                pen
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.228</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="plantable seed pen"
+                                    data-price="228" data-image="https://m.media-amazon.com/images/I/31fSEV3gf8L.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-body-back">
+            <div class="container div-height item-back">
+
+
+                <div class="card mb-3" style="width:100% ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://m.media-amazon.com/images/I/51TAyMIZwaL.jpg"
+                                style="width: 100%; height: 100%;" alt="product">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 30px;">
+                                <p class="h1" style=" color: rgb(19, 107, 25);">Solar Powered Calculators </p>
+                                <h3 style="font-size: 25px;">
+                                    Office Supplies Product
+                                    <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                </h3>
+                                <div>
+                                    <span class="a-price-symbol">₹</span>
+                                    <span class="a-price-whole" style="font-size: 25px; color: black;">2,500</span>
+                                </div>
+                                <a class="btn btn-primary" href="https://amzn.in/d/006N0SWm"
+                                    style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                    role="button">BUY NOW</a>
+
+                                <button class="btn btn-primary add-to-cart" data-name="solar powered calculators"
+                                    data-price="2,500" data-image="https://m.media-amazon.com/images/I/51TAyMIZwaL.jpg"
+                                    style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                    To Cart</button>
+
+                                <p class="text-center"
+                                    style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                    Product Description</p>
+                                <p class="card-text"> Made of natural eco-friendly bamboo wood using dual smart power
+                                    supplies handcrafted bamboo calculator is perfect for your daily use comfortable to
+                                    the
+                                    touch and pleasing to the eyes. The wooden solar calculator is a general purpose
+                                    desktop
+                                    calculator with 12 digits and large display it is useful for large calculations
+                                    Using
+                                    laser engraving technology the carved numbers won't disappear even after a long time
+                                    of
+                                    use
+                                    The solar power is generally used when the solar power is used up the button battery
+                                    will replace it. Pressing AC or ON key to turn on the power and it will
+                                    automatically
+                                    turn off if no operation in 12 minutes to enter power saving mode
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                <div class="content">
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://5.imimg.com/data5/SELLER/Default/2024/3/402993801/JV/GK/OQ/119001399/6-1000x1000.jpg"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">eco-friendly
+                                calculator diary
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">Rs.100</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="eco-friendly calculator" data-price="100"
+                                    data-image="https://5.imimg.com/data5/SELLER/Default/2024/3/402993801/JV/GK/OQ/119001399/6-1000x1000.jpg"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://kulayatbp.com/cdn/shop/files/KA-033-0007-D_1024x1024@2x.png?v=1704524178"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">KID ART large
+                                eco-friendly calculator
+                            <li class="list-group-item" style="text-align: center;">Rs.199</li>
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="kid art calculator"
+                                    data-price="199"
+                                    data-image="https://kulayatbp.com/cdn/shop/files/KA-033-0007-D_1024x1024@2x.png?v=1704524178"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://laboiteagrains.com/cdn/shop/files/petite-calculatrice-ecoresponsable-la-boite-a-grains.jpg?v=1687877742"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">ONYX green small
+                                calculator</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.585</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="onyx green small calculator" data-price="585"
+                                    data-image="https://laboiteagrains.com/cdn/shop/files/petite-calculatrice-ecoresponsable-la-boite-a-grains.jpg?v=1687877742"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card"
+                        style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                        <img style=" border-radius: 10px"
+                            src="https://cdn.shopify.com/s/files/1/1417/8430/files/desktop-calculator_large.jpg?v=1474635173"
+                            class="card-img-top" alt="...">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="text-align: center; font-weight: 600; ">Maizy desktop
+                                calculator</li>
+                            <li class="list-group-item" style="text-align: center;">Rs.1,423</li>
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="maizy desktop calculator" data-price="1423"
+                                    data-image="https://cdn.shopify.com/s/files/1/1417/8430/files/desktop-calculator_large.jpg?v=1474635173"
+                                    class="card-link add-to-cart"
+                                    style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXlNHjQzA+AIh8vSLiP6KtxnrFAKe0evoEH1ylcC1VI6C2Pl4KE6oaptl2" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhG5StlNEiPHI4SnHWFp3dP4l9d4K76UUGYheH9jSmXNf4GmNNbWNTxIxOf" crossorigin="anonymous">
+        </script>
+    <script src="product.js">
+    </script>
+</body>
+
+</html>
