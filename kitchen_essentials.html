@@ -16,68 +16,81 @@
 </head>
 
 <body class="body">
-   
+
     <div class="header">
         <div class="container-head">
-          <a href="Home.html" >  <div class="logo-div"></div>
-                </a>
-                <div class="list">
-                    <ul class="listItems">
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(45, 59, 41) ;" href="Home.html">Home</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;" href="#about">About</a></li>
-                        <li class="item"><a style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="#shop-more">Shop</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;" href="Barter.html">Facility</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="Contact.html">Contact</a></li>
-                        <li  class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="#join">Join</a></li>
-    
-    
-                    </ul>
-                </div>
-         <div class="sideicon"> 
-            <div class="box">
-                <input type="search" placeholder="Search....">
-                <a href="#">
-                    <i class="bi bi-search-heart" style="font-size: 1.5rem; color: rgb(140, 232, 134);">
+            <a href="Home.html">
+                <div class="logo-div"></div>
+            </a>
+            <div class="list">
+                <ul class="listItems">
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(45, 59, 41) ;"
+                            href="Home.html">Home</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#about">About</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#shop-more">Shop</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="Barter.html">Facility</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="Contact.html">Contact</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#join">Join</a></li>
 
-                    </i> </a>
+
+                </ul>
             </div>
-              <div style="margin-bottom: 15px;" class="cart"> 
-                 <div class="cart-icon" id="cartIcon">
-                    <i class="bi bi-cart-check-fill" style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i>
-                                </div>
-                <div class="cart-dropdown" id="cartDropdown">
-                    <h2 class="text-center">Shopping Cart</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="cart-items">
-                            <!-- Cart items will be dynamically added here -->
-                        </tbody>
-                    </table>
-                    <div class="text-end">
-                        <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+            <div class="sideicon">
+                <div class="box">
+                    <input type="search" placeholder="Search....">
+                    <a href="#">
+                        <i class="bi bi-search-heart" style="font-size: 1.5rem; color: rgb(140, 232, 134);">
+
+                        </i> </a>
+                </div>
+                <div style="margin-bottom: 15px;" class="cart">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="bi bi-cart-check-fill" style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i>
                     </div>
-                    <div class="text-end mt-2">
-                        <button class="btn btn-primary">Proceed to Checkout</button>
+                    <div class="cart-dropdown" id="cartDropdown">
+                        <h2 class="text-center">Shopping Cart</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Cart items will be dynamically added here -->
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+                        </div>
+                        <div class="text-end mt-2">
+                            <button class="btn btn-primary">Proceed to Checkout</button>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="profile">
                     <a href="login-signup.html"><i class="bi bi-person-circle"
-                        style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i></a>
+                            style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i></a>
                 </div>
             </div>
-            </div>
         </div>
-   
+    </div>
+
     <div class="main-content">
         <div class="product-back">
             <div class="container ">
@@ -136,7 +149,8 @@
             </div>
         </div>
         <hr style="border: 5px double rgb(0, 82, 100);">
-        <h2 class="product-heading" style="font-size: 45px; text-decoration: underline; font-weight: 700; color: rgb(65, 60, 70);">PRODUCTS</h2>
+        <h2 class="product-heading"
+            style="font-size: 45px; text-decoration: underline; font-weight: 700; color: rgb(65, 60, 70);">PRODUCTS</h2>
 
 
         <div class="item-body-back">
@@ -189,7 +203,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">Related Products</div>
+                <div
+                    style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">
+                    Related Products</div>
                 <div class="content">
                     <div class="card"
                         style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
@@ -203,7 +219,10 @@
                                 botlle
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.369</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="stainless steel bottle" data-price="369" data-image="https://m.media-amazon.com/images/I/31tzzfB3UfL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="stainless steel bottle" data-price="369"
+                                    data-image="https://m.media-amazon.com/images/I/31tzzfB3UfL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -219,7 +238,10 @@
                                 Glass
                                 water bottle
                             <li class="list-group-item" style="text-align: center;">Rs.510</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="glass water bottle" data-price="510" data-image="https://m.media-amazon.com/images/I/61rj-hFURML._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="glass water bottle"
+                                    data-price="510"
+                                    data-image="https://m.media-amazon.com/images/I/61rj-hFURML._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -237,7 +259,10 @@
                                 water
                                 bottle</li>
                             <li class="list-group-item" style="text-align: center;">Rs.322</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="sipper water bottle" data-price="322" data-image="https://m.media-amazon.com/images/I/31Pnb4flU2L._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="sipper water bottle"
+                                    data-price="322"
+                                    data-image="https://m.media-amazon.com/images/I/31Pnb4flU2L._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -253,7 +278,10 @@
                                 Glass
                                 water bottle</li>
                             <li class="list-group-item" style="text-align: center;">Rs.349</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="eco glass water bottle" data-price="349" data-image="https://m.media-amazon.com/images/I/41hiHfdLHVL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="eco glass water bottle" data-price="349"
+                                    data-image="https://m.media-amazon.com/images/I/41hiHfdLHVL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -269,7 +297,10 @@
                                 bottle
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.1,589</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="copper water bottle" data-price="1589" data-image="https://m.media-amazon.com/images/I/713vH-Y1RwL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="copper water bottle"
+                                    data-price="1589"
+                                    data-image="https://m.media-amazon.com/images/I/713vH-Y1RwL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -304,8 +335,7 @@
                                     style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
                                     role="button">BUY NOW</a>
 
-                                <button class="btn btn-primary add-to-cart" data-name="reusable starws"
-                                    data-price="199"
+                                <button class="btn btn-primary add-to-cart" data-name="reusable starws" data-price="199"
                                     data-image="https://m.media-amazon.com/images/I/71ZAvAdIthL._SX679_.jpg"
                                     style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
                                     To Cart</button>
@@ -338,7 +368,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">Related Products</div>
+                <div
+                    style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">
+                    Related Products</div>
                 <div class="content">
                     <div class="card"
                         style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
@@ -350,7 +382,10 @@
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">reusable steel
                                 straw
                             <li class="list-group-item" style="text-align: center;">Rs.99</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="steel straw" data-price="99" data-image="https://images-eu.ssl-images-amazon.com/images/I/616Y1cRMuuL._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="steel straw"
+                                    data-price="99"
+                                    data-image="https://images-eu.ssl-images-amazon.com/images/I/616Y1cRMuuL._AC_UL165_SR165,165_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -366,7 +401,10 @@
                                 straw
 
                             <li class="list-group-item" style="text-align: center;">Rs.399</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="silicon straw" data-price="399" data-image="https://images-eu.ssl-images-amazon.com/images/I/51Zlb2pr0zL._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="silicon straw"
+                                    data-price="399"
+                                    data-image="https://images-eu.ssl-images-amazon.com/images/I/51Zlb2pr0zL._AC_UL165_SR165,165_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -383,7 +421,10 @@
                                 straws
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.150</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="biodegradable straws" data-price="150" data-image="https://images-eu.ssl-images-amazon.com/images/I/619tCwfcSSL._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="biodegradable straws"
+                                    data-price="150"
+                                    data-image="https://images-eu.ssl-images-amazon.com/images/I/619tCwfcSSL._AC_UL165_SR165,165_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -398,7 +439,10 @@
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">bamboo straws
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.429</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="bamboo straws" data-price="429" data-image="https://images-eu.ssl-images-amazon.com/images/I/512fX8BCmPL._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="bamboo straws"
+                                    data-price="429"
+                                    data-image="https://images-eu.ssl-images-amazon.com/images/I/512fX8BCmPL._AC_UL165_SR165,165_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -470,7 +514,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">Related Products</div>
+                <div
+                    style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">
+                    Related Products</div>
                 <div class="content">
                     <div class="card"
                         style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
@@ -484,7 +530,10 @@
                                 paper liner
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.497</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="disposable air fryer" data-price="497" data-image="https://m.media-amazon.com/images/I/5192gXogYQL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="disposable air fryer"
+                                    data-price="497"
+                                    data-image="https://m.media-amazon.com/images/I/5192gXogYQL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -501,7 +550,10 @@
                                 Air
                                 fryer liners
                             <li class="list-group-item" style="text-align: center;">Rs.299</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="reusable silicon air fryer" data-price="299" data-image="https://m.media-amazon.com/images/I/41CaOPGxLRL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="reusable silicon air fryer" data-price="299"
+                                    data-image="https://m.media-amazon.com/images/I/41CaOPGxLRL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -517,7 +569,10 @@
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">Muffin cup moulds
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.131</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="muffin cup moulds"data-price="131" data-image="https://images-eu.ssl-images-amazon.com/images/I/615iVGeueML._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="muffin cup moulds"
+                                    data-price="131"
+                                    data-image="https://images-eu.ssl-images-amazon.com/images/I/615iVGeueML._AC_UL165_SR165,165_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -532,7 +587,10 @@
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">silicone baking
                                 tray
                             <li class="list-group-item" style="text-align: center;">Rs.549</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="silicon baking tray" data-price="549" data-image="https://m.media-amazon.com/images/I/417E6I8TJqL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="silicon baking tray"
+                                    data-price="549"
+                                    data-image="https://m.media-amazon.com/images/I/417E6I8TJqL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -600,11 +658,13 @@
                         </div>
                     </div>
                 </div>
-                <div style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">Related Products</div>
+                <div
+                    style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">
+                    Related Products</div>
                 <div class="content">
                     <div class="card"
                         style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                        <img style=" border-radius: 10px" 
+                        <img style=" border-radius: 10px"
                             src="https://m.media-amazon.com/images/I/21+EmlHL2HL._AC_UF480,480_SR480,480_.jpg"
                             class="card-img-top" alt="...">
 
@@ -613,7 +673,10 @@
                                 container
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.699</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="bamboo fibre container" data-price="699" data-image="https://m.media-amazon.com/images/I/21+EmlHL2HL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="bamboo fibre container" data-price="699"
+                                    data-image="https://m.media-amazon.com/images/I/21+EmlHL2HL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -629,7 +692,10 @@
                                 cloth
                                 storage basket bin
                             <li class="list-group-item" style="text-align: center;">Rs.1,487</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="cloth storage basket bin" data-price="1487" data-image="https://m.media-amazon.com/images/I/41V4UX9SxOL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="cloth storage basket bin" data-price="1487"
+                                    data-image="https://m.media-amazon.com/images/I/41V4UX9SxOL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -646,7 +712,10 @@
                                 crafted paper food container
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.629</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="hand craft food container" data-price="629" data-image="https://m.media-amazon.com/images/I/61CTQNTsNDL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="hand craft food container" data-price="629"
+                                    data-image="https://m.media-amazon.com/images/I/61CTQNTsNDL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -663,7 +732,10 @@
                                 container
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.349</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="coconut shell storage" data-price="349" data-image="https://m.media-amazon.com/images/I/613+09qvEML._AC_UL480_FMwebp_QL65_.jpg" data class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="coconut shell storage" data-price="349"
+                                    data-image="https://m.media-amazon.com/images/I/613+09qvEML._AC_UL480_FMwebp_QL65_.jpg"
+                                    data class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -678,7 +750,10 @@
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">Rice Husk earth
                                 friendly container
                             <li class="list-group-item" style="text-align: center;">Rs.984</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="rice husk container" data-price="984" data-image="https://m.media-amazon.com/images/I/81UaRdHcwJL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="rice husk container"
+                                    data-price="984"
+                                    data-image="https://m.media-amazon.com/images/I/81UaRdHcwJL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -711,8 +786,8 @@
                                 <a class="btn btn-primary" href="https://amzn.in/d/07VVxjG9"
                                     style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
                                     role="button">BUY NOW</a>
-                                <button class="btn btn-primary add-to-cart" data-name="organic and fair trade coffee /tea"
-                                    data-price="289"
+                                <button class="btn btn-primary add-to-cart"
+                                    data-name="organic and fair trade coffee /tea" data-price="289"
                                     data-image="https://m.media-amazon.com/images/I/51C45eP5V5L._SX300_SY300_QL70_FMwebp_.jpg"
                                     style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
                                     To Cart</button>
@@ -736,7 +811,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">Related Products</div>
+                <div
+                    style="font-size: 30px; color:rgb(64, 37, 62); margin-left: 15px; text-align: center; font-weight: 700; margin: 50px 0;">
+                    Related Products</div>
                 <div class="content">
                     <div class="card"
                         style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
@@ -750,7 +827,10 @@
                                 bags
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.345</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="valerian sleep tea bags" data-price="345" data-image="https://m.media-amazon.com/images/I/31u0fEmUzuL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="valerian sleep tea bags" data-price="345"
+                                    data-image="https://m.media-amazon.com/images/I/31u0fEmUzuL._AC_UF480,480_SR480,480_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -764,7 +844,10 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item" style="text-align: center; font-weight: 600; ">Organic green tea
                             <li class="list-group-item" style="text-align: center;">Rs.199</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="organic green tea" data-price="199" data-image="https://m.media-amazon.com/images/I/61nU2LBTmhL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="organic green tea"
+                                    data-price="199"
+                                    data-image="https://m.media-amazon.com/images/I/61nU2LBTmhL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -781,7 +864,10 @@
                                 cofee
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.420</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="roasted organic coffee" data-price="420" data-image="https://m.media-amazon.com/images/I/81eXquWwUtL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="roasted organic coffee" data-price="420"
+                                    data-image="https://m.media-amazon.com/images/I/81eXquWwUtL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -797,7 +883,10 @@
                                 powder
                             </li>
                             <li class="list-group-item" style="text-align: center;">Rs.192</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="filter coffee powder" data-price="192" data-image="https://m.media-amazon.com/images/I/81uzFYeH0fL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a data-name="filter coffee powder"
+                                    data-price="192"
+                                    data-image="https://m.media-amazon.com/images/I/81uzFYeH0fL._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -813,7 +902,10 @@
                                 leaf
                                 tea </li>
                             <li class="list-group-item" style="text-align: center;">Rs.180</li>
-                            <li class="list-group-item" style="text-align: center;"> <a data-name="darjeeling long leaf tea" data-price="180" data-image="https://m.media-amazon.com/images/I/518CWw3Sb8L._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                            <li class="list-group-item" style="text-align: center;"> <a
+                                    data-name="darjeeling long leaf tea" data-price="180"
+                                    data-image="https://m.media-amazon.com/images/I/518CWw3Sb8L._AC_UL480_FMwebp_QL65_.jpg"
+                                    class="card-link add-to-cart"
                                     style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
                         </ul>
 
@@ -824,72 +916,91 @@
     </div>
 
     <div id="join" class="newsettler">
-        <p class="h3">News Blogs Products</p>    
-    <div class="input-group mb-3" style="width: 50%;">
-        <input type="email" style="outline:1px solid #13241c;" class="form-control" placeholder="Email Id" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary"  style="color: antiquewhite;  background-color: #365913; border-top-right-radius: 30px;border-bottom-right-radius: 30px;" type="button" id="button-addon2">Subscribe</button>
-      </div>
+        <p class="h3">News Blogs Products</p>
+        <div class="input-group mb-3" style="width: 50%;">
+            <input type="email" style="outline:1px solid #13241c;" class="form-control" placeholder="Email Id"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary"
+                style="color: antiquewhite;  background-color: #365913; border-top-right-radius: 30px;border-bottom-right-radius: 30px;"
+                type="button" id="button-addon2">Subscribe</button>
         </div>
-        <div class="main6">
-            <footer>
-    <div class="lastContainer">
-        <div class="sec aboutus">
-            <h2 style="font-size: 40px; font-weight: 500">Eco-Friendly-Product-Finder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe sed cupiditate repudiandae fugit iste quas recusandae quos porro soluta necessitatibus quod, corporis ullam, sapiente quibusdam quasi eaque vitae odio?</p>
-        <ul class="sci">
-            <li><a href=""><i class="bi bi-facebook"></i></a></li>
-            <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-            <li><a href=""><i class="bi bi-twitter"></i></a></li>
-    
-            
-        </ul>
-        </div>
-        <div class="sec quicklink">
-            <h2>Support</h2>
-            <ul><li><a href="">Privacy Policy</a></li>
-                
-                <li><a href="Barter.html">Facility</a></li>
-                <li><a href="Contact.html">Help</a></li>
-                <li><a href="#faq">FAQ</a></li>
-           </ul>
-        </div>
-        <div class="sec quicklink">
-            <h2>Shop</h2>
-            <ul><li><a href="personal_care.html">personal care</a></li>
-                <li><a href="kitchen_essentials.html">kitchen household</a></li>
-                <li><a href="Electronics.html">elctronics</a></li>
-                <li><a href="office-supplies.html">office</a></li>
-                <li><a href="gardening-outdoor.html">gardening-outdoor</a></li>
-                <li><a href="travel.html">travel</a></li>
-                <li><a href="clothing_and_accessories.html">clothing & accessories</a></li>
-
-            </ul>
-       
-       
-        </div>
-         <div class="sec contact">
-            <h2>Contact Us</h2>
-            <ul class="info">
-                <li><span><i class="bi bi-telephone-fill"></i></span><p>
-                <a href="Contact.html">9911124378</a></p></li>
-                <li><span><i class="bi bi-telephone-fill"></i></span><p>
-                    <a href="Contact.html">9873496767</a></p></li>
-                    <li><span><i class="bi bi-telephone-fill"></i></span><p>
-                        <a href="Contact.html">9205520265</a></p></li>
-                
-                <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGKZjmsKGjBSdCRjqMxKDhDSCQFjSmkptVXwbjNGDdwflxXhlcBSmGDpJSDHhZCJSvXGKsz">deepibhatt03@gmail.com</a></p></li>
-                    <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDvfcvwlgJnRjRPqhZztZCpPWvFgWDfcpwRdQbhgCMvbXqVtDZNNxTZMprzPlhXLtfnFfZq">aggarwaldisha26@gmail.com</a></p></li>
-                        <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
-                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWstsBfVQVCflrlCsLDPsQtNxBbgbPFTqHtMtJNXBfbGnxTHXDCQKHVPCSGSlSpTxSNndtPRb">pranita2413@gmail.com</a></p></li>
-                        
-            </ul>
-        </div>
-        
     </div>
-    
+    <div class="main6">
+        <footer>
+            <div class="lastContainer">
+                <div class="sec aboutus">
+                    <h2 style="font-size: 40px; font-weight: 500">Eco-Friendly-Product-Finder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe sed cupiditate repudiandae
+                        fugit iste quas recusandae quos porro soluta necessitatibus quod, corporis ullam, sapiente
+                        quibusdam quasi eaque vitae odio?</p>
+                    <ul class="sci">
+                        <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter"></i></a></li>
+
+
+                    </ul>
+                </div>
+                <div class="sec quicklink">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+
+                        <li><a href="Barter.html">Facility</a></li>
+                        <li><a href="Contact.html">Help</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklink">
+                    <h2>Shop</h2>
+                    <ul>
+                        <li><a href="personal_care.html">personal care</a></li>
+                        <li><a href="kitchen_essentials.html">kitchen
+                                household</a></li>
+                        <li><a href="clothing_and_accessories.html">clothing &
+                                accessories</a></li>
+                        <li><a href="household_items.html">household items</a></li>
+                        <li><a href="office-supplies.html">office supplies</a></li>
+                        <li><a href="Electronics.html">electronics
+                            </a></li>
+                        <li><a href="travel.html">travel</a></li>
+                        <li><a href="gardening-outdoor.html">gardening & outdoor</a></li>
+                    </ul>
+
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Us</h2>
+                    <ul class="info">
+                        <li><span><i class="bi bi-telephone-fill"></i></span>
+                            <p>
+                                <a href="Contact.html">9205520265 ,</a>
+                                <a href="Contact.html">9873496767 ,</a>
+                                <a href="Contact.html">9911124378</a>
+                            </p>
+                        </li>
+
+
+                        <li><span><i class="bi bi-envelope-at-fill"></i></span>
+                            <p>
+                                <a
+                                    href="mailto:aggarwaldisha26@gmail.com">aggarwaldisha26@gmail.com</a>
+                            </p>
+                            <span><i class="bi bi-envelope-at-fill"></i></span>
+                            <p>
+                                <a href="mailto:pranita2413@gmail.com">pranita2413@gmail.com</a>
+                            </p>
+                            <span><i class="bi bi-envelope-at-fill"></i></span>
+                            <p>
+                                <a
+                                    href="mailto:deepibhatt03@gmail.com">deepibhatt03@gmail.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </footer>
         <div class="copyrightText">
             <hr>
@@ -897,13 +1008,13 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXlNHjQzA+AIh8vSLiP6KtxnrFAKe0evoEH1ylcC1VI6C2Pl4KE6oaptl2" crossorigin="anonymous">
+        integrity="sha384-IQsoLXlNHjQzA+AIh8vSLiP6KtxnrFAKe0evoEH1ylcC1VI6C2Pl4KE6oaptl2" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhG5StlNEiPHI4SnHWFp3dP4l9d4K76UUGYheH9jSmXNf4GmNNbWNTxIxOf" crossorigin="anonymous">
+        </script>
+    <script src="product.js">
     </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhG5StlNEiPHI4SnHWFp3dP4l9d4K76UUGYheH9jSmXNf4GmNNbWNTxIxOf" crossorigin="anonymous">
-    </script>
-<script src="product.js">
-</script>
 </body>
 
 </html>
