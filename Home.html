@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFPF|eco-friendly products finder website</title>
+    <link rel="icon" href="EFPFlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="container-head">
+                <a href="Home.html">
+                    <div class="logo-div"></div>
+                </a>
+                <div class="list">
+                    <ul class="listItems">
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(45, 59, 41) ;"
+                                href="Home.html">Home</a></li>
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                                href="#about">About</a></li>
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                                href="#shop-more">Shop</a></li>
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                                href="Barter.html">Facility</a></li>
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                                href="Contact.html">Contact</a></li>
+                        <li class="item"><a
+                                style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                                href="#join">Join</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="sideicon">
+                    <div class="box">
+                        <input type="search" placeholder="Search....">
+                        <a href="#">
+                            <i class="bi bi-search-heart" style="font-size: 1.5rem; color: rgb(140, 232, 134);">
+
+                            </i> </a>
+                    </div>
+                    <div style="margin-bottom: 15px;" class="cart">
+                        <div class="cart-icon" id="cartIcon">
+                            <i class="bi bi-cart-check-fill" style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i>
+                        </div>
+                        <div class="cart-dropdown" id="cartDropdown">
+                            <h2 class="text-center">Shopping Cart</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-items">
+                                    <!-- Cart items will be dynamically added here -->
+                                </tbody>
+                            </table>
+                            <div class="text-end">
+                                <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+                            </div>
+                            <div class="text-end mt-2">
+                                <button class="btn btn-primary">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <a href="login-signup.html"><i class="bi bi-person-circle"
+                                style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="card mb-3" style="max-width:1200px; border: none; ">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://elements-video-cover-images-0.imgix.net/video-previews/575ecf12-6b01-464c-ac9c-29ae96f65511/7606db4c-1de2-4283-8f8b-a59cc64d63ca/video_preview/video_preview_0000.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=09175723821996f2450e64ea4b3315ed"
+                            style="width: 500px; height: 60vh;" alt="product">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style=" width: 600px;margin-left:100px; margin-top: 25px;">
+
+                            <h1 class="card-title"
+                                style=" font-weight: 800; font-family: cursive;  font-size: 3rem; text-shadow:0.5px, 0.5px, 0.5px #18241f;">
+                                Transform Your Space Using Sustaninable And Eco-Friendly Products.
+                            </h1>
+                            <p class="text-start" style="color: rgb(124, 121, 113); font-size: 20px; font-weight: 400;">
+                                “Buy less, choose well, make it last.”</p>
+                            <a class="btn btn-primary" href="#shop-more"
+                                style="background-color: rgb(82, 65, 36); width: 300px; margin-top: 15px;  border-radius: 15px;"
+                                role="button">Grab Now</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="main1">
+            <h1 class="intro">Who are we?</h1>
+            <div class="page2">
+                <div class="about">
+                    <span style="font-weight: 700;font-size:45px; color:#4b8a6e; ">Goal of EFPF-Website</span>
+                    <h3 style="font-size: 45px;
+                color: #142b48; margin-top: 5px;">Our Team</h3>
+                    <p class="text-lowercase"
+                        style=" margin-top: 25px;color: #142b48; font-weight: 500; margin-right: 10px; ">
+                        We are three individuals contributing together under the
+name "Frontend Designers". We are highly motivated towards teamwork and contributing to the project we work on. Apart from being teammates, we are classmates, so we share a good work culture while working. We are here to present ourselves as a team, to step ahead and contribute to the best possible extent.
+page</p>
+
+                </div>
+
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/a3csa3vfbzc?si=HR4V4vHpKlJ-sMpt?autopaly=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="main3">
+            <div class="blog">
+                <h1 style="font-weight: 700; font-size: 90px;color:#292213; font-family: sans-serif;">
+                    Blogs...
+
+                </h1>
+            </div>
+
+            <div class="gallery">
+                <div class="blogbox" id="box-1"
+                    style=" background-image: url('https://www.sustainablejungle.com/wp-content/uploads/2020/08/Image-by-Reusable-Nation.jpg')">
+                    <a style="text-decoration: none; font-size: 25px; font-weight: 500; color:rgb(94, 103, 160);"
+                        href="https://www.greenerchoices.org/zero-waste-lifestyle/">
+                        Zero Waste Living</a>
+                </div>
+                <div class="blogbox" id="box-2"
+                    style="background-image: url('https://th.bing.com/th/id/OIP.vE-LnuysHXlga2KlI8jmqgHaE8?w=279&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7')">
+                    <a style=" font-size: 25px; font-weight: 500; color:rgb(123, 211, 168);text-decoration: none;"
+                        href="https://greenliving.guru/sustainable-lifestyle/">
+                        Sustainable Living</a>
+                </div>
+                <div class="blogbox"
+                    style="background-image: url('https://th.bing.com/th/id/OIP.xoiufLLhjZNJEjvzhwseRgHaFj?rs=1&pid=ImgDetMain')">
+                    <a style=" font-size: 25px; font-weight: 500; color:rgb(6, 19, 5);text-decoration: none; margin-left: 5px;"
+                        href="https://goodonyou.eco/what-is-sustainable-fashion/">
+                        Ethical & Sustainable Fashion</a>
+                </div>
+                <div class="blogbox" id="box-3"
+                    style="background-image: url('http://ts2.mm.bing.net/th?id=OIP.eA6JSYHk2t9A_d0UwH2PYwHaE8&pid=15.1')">
+                    <a style=" font-size: 25px; font-weight: 500; color:rgb(22, 27, 59);text-decoration: none;"
+                        href="https://www.wikihow.com/Save-Energy-in-Your-Home">
+                        How To Save Energy</a>
+                </div>
+                <div class="blogbox" id="box-4"
+                    style="background-image: url('https://th.bing.com/th/id/OIP.hKboNLyMHVh_0G_cBwJIvgHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7')">
+                    <a style="text-decoration: none;font-size: 25px; font-weight: 500; color:rgb(55, 77, 109)"
+                        href="https://www.sustainablejungle.com/zero-waste/inspiring-zero-waste-blogs">
+                        No Plastic</a>
+                </div>
+                <div class="blogbox"
+                    style="background-image: url('https://www.cleanipedia.com/images/v2/30d3a2641a569617f0f971b10911447a-3600w-2400h.jpg')">
+                    <a style="text-decoration: none; font-size: 25px; font-weight: 500; color:rgb(22, 27, 59);"
+                        href="https://sustainablewave.com/ways-to-conserve-water/">
+                        How to save water</a>
+                </div>
+                <div class="blogbox" id="box-5"
+                    style=" background-image: url('https://th.bing.com/th/id/OIP.JgoeJZMQyLBniPiU9gjLtAHaEK?rs=1&pid=ImgDetMain')">
+                    <a href="https://www.greenlivinganswers.com/green-cleaning"
+                        style=" text-decoration: none; font-size: 25px; font-weight: 500; color:rgb(40, 76, 30); font-size: 25px; font-weight: 500; ;">
+                        Green Cleaning</a>
+                </div>
+            </div>
+        </div>
+        <div id="shop-more" class="main4">
+            <h1
+                style="text-align: center; margin-top: 10%; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700;">
+                Easy Being Green</h1>
+            <div class="gallery-wrapper">
+                <img id="backbtn"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4IBkpEkqSljV-W5r_nDpELXoxFkhr6RVPw&s"
+                    alt="back" />
+                <div class="essential">
+                    <div>
+
+                        <a style="text-decoration: none;" href="personal_care.html"><img width="100%" height="300px"
+                                src="https://m.media-amazon.com/images/I/71UWLExL3dL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(34, 18, 48);">
+                                Personal Care</p>
+                        </a>
+                        <a style="text-decoration: none;" href="household_items.html"><img width="100%" height="300px"
+                                src="https://m.media-amazon.com/images/I/716SH6dwE6L._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(46, 34, 17);">
+                                Household Items</p>
+
+                        </a>
+                        <a style="text-decoration: none; " href="clothing_and_accessories.html">
+                            <img width="100%" height="300px"
+                                src="https://m.media-amazon.com/images/I/61SbhjJQxQL._AC_UL480_FMwebp_QL65_.jpg" alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(9, 73, 27);">
+                                Kitchen Essential</p>
+                        </a>
+                        <a style="text-decoration: none;" href="kitchen_essentials.html"><img width="100%"
+                                height="300px"
+                                src="https://m.media-amazon.com/images/I/51W0YDiJobL._AC_SR405,405_.jpg"
+                                alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(60, 18, 50);">
+                                Clothing And Accessories</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a style="text-decoration: none;" href="office-supplies.html"> <img width="100%" height="300px"
+                                src="https://th.bing.com/th/id/R.2e7c38ad5f1f03ba830b96e076e4c139?rik=IgTQTEqLoiMKEQ&riu=http%3a%2f%2fecoluxeproduct.com%2fwp-content%2fuploads%2f2022%2f04%2fEcofriendly-Office-Supplies-1024x575-1.jpg&ehk=HbiQ%2f8gR9GY5FIsC8q5pllJ%2bsW%2fwmoKWO9gh5sQym3E%3d&risl=&pid=ImgRaw&r=0" alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(31, 49, 101);">
+                                Office Supplies</p>
+                        </a>
+                        <a style="text-decoration: none;" href="gardening-outdoor.html"> <img width="100%"
+                                height="300px"
+                                src="https://th.bing.com/th/id/OIP.8Zgs_IRJkdaaX4vWaTlO9wHaE_?rs=1&pid=ImgDetMain"
+                                alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(95, 104, 34);">
+                                Gardening and Outdoor</p>
+                        </a>
+                        <a style="text-decoration: none;" href="Electronics.html"> <img width="100%" height="300px"
+                                src="https://ipricethailand.com/insights/wp-content/uploads/2023/05/4-1.jpg"
+                                alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(9, 73, 27);">
+                                Electronics Gadget</p>
+                        </a>
+                        <a style="text-decoration: none;" href="travel.html"> <img width="100%" height="300px"
+                                src="https://miro.medium.com/v2/resize:fit:1152/0*Jc9F-YasbsR6HGLc.jpg" alt="...">
+                            <p class="text-center"
+                                style=" margin-top: 15px; font-weight:500; font-size: 20px; color: rgb(93, 16, 72);">
+                                Travel Essential</p>
+                        </a>
+                    </div>
+
+
+                </div>
+                <img style="width: 90px;" id="nextbtn"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQQBATohB3vvBB5kJrEpiUCwkyb98o0s8i6_GdUem4uCsjeEbW1gRJhjtkkrHi4xHO6k&usqp=CAU"
+                    alt="next" />
+            </div>
+        </div>
+        <div class="main5">
+            <p class="h1" style="text-align: center;">Testimonials</p>
+            <hr>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active box-1">
+                        <div class="carousel-caption " style="margin-bottom: 50px;">
+                            <h4 style="font-size: 40px; font-weight: 900;color: #1d6042;">Preeti Verma </h4>
+                            <h5 style="color: rgb(44, 61, 56);">Software Engineer,Delhi</h5>
+                            <p style="font-weight: 700; color: #252015;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae odio nemo
+                                laudantium voluptates beatae aliquid officiis corrupti? Aliquid eius adipisci nulla
+                                cupiditate ducimus similique autem, aspernatur distinctio laborum natus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item active box-2">
+                        <div class="carousel-caption " style="margin-bottom: 50px;">
+                            <h4 style="font-size: 40px; font-weight: 900;color: #899736;">Adit Yadav </h4>
+                            <h5 style="color: #365913;">Accountant,Darjeeling</h5>
+                            <p style="font-weight: 700; color: #827f79;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae odio nemo
+                                laudantium voluptates beatae aliquid officiis corrupti? Aliquid eius adipisci nulla
+                                cupiditate ducimus similique autem, aspernatur distinctio laborum natus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item active box-3">
+                        <div class="carousel-caption " style="margin-bottom: 50px;">
+                            <h4 style="font-size: 40px; font-weight: 700;color: #413010;">Niharika Sharma </h4>
+                            <h5 style="color: rgb(87, 64, 64);">Fashion Designer</h5>
+                            <p style="font-weight: 700; color: #2a1f09;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae odio nemo
+                                laudantium voluptates beatae aliquid officiis corrupti? Aliquid eius adipisci nulla
+                                cupiditate ducimus similique autem, aspernatur distinctio laborum natus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item box-4">
+                        <div class="carousel-caption " style="margin-bottom: 50px;">
+                            <h4 style="font-size: 40px; font-weight: 900;color: #365913;">Harshit Bhatt </h4>
+                            <h5 style="color: rgb(40, 86, 49);">Undergrad,Uttar-Pradesh</h5>
+                            <p style="font-weight: 700; color: #2a1f09;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae odio nemo
+                                laudantium voluptates beatae aliquid officiis corrupti? Aliquid eius adipisci nulla
+                                cupiditate ducimus similique autem, aspernatur distinctio laborum natus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item box-5">
+                        <div class="carousel-caption " style="margin-bottom: 50px;">
+                            <h4 style="font-size: 40px; font-weight: 900;color: #142a44;">Rajan Sharma</h4>
+                            <h5 style="color: rgb(69, 57, 72);">Marketing Agent,Nepal</h5>
+                            <p style="font-weight: 700; color: #393327;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vitae odio nemo
+                                laudantium voluptates beatae aliquid officiis corrupti? Aliquid eius adipisci nulla
+                                cupiditate ducimus similique autem, aspernatur distinctio laborum natus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div id="faq" class="faq-container">
+            <h2>Frequently Asked question</h2>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Q. What are eco-friendly products?</h3>
+                </div>
+                <div class="answer">
+                    A: Eco-friendly products are items that have a minimal impact on the environment. They are made from
+                    sustainable materials and are often biodegradable or recyclable.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Q. Why should I choose eco-friendly products?</h3>
+                </div>
+                <div class="answer">
+                    A: Choosing eco-friendly products helps reduce your carbon footprint, conserves natural resources,
+                    and
+                    supports sustainable practices. It contributes to a healthier planet and a better future.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Q. How can I identify eco-friendly products?</h3>
+                </div>
+                <div class="answer">
+                    A: Look for certifications and labels such as Organic, Fair Trade, or Energy Star. Also, check if
+                    the
+                    product is made from recycled or renewable materials and if the company follows sustainable
+                    practices.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>Q. Are eco-friendly products more expensive?</h3>
+                </div>
+                <div class="answer">
+                    A: Eco-friendly products can sometimes be more expensive due to the cost of sustainable materials
+                    and
+                    ethical production practices. However, prices have been decreasing as demand increases and
+                    technology
+                    improves. Investing in eco-friendly products can also lead to long-term savings, such as durability
+                    and
+                    energy efficiency.
+                </div>
+            </div>
+        </div>
+        <div id="join" class="newsettler">
+            <p class="h3">News Blogs Products</p>
+            <div class="input-group mb-3" style="width: 50%;">
+                <input type="email" style="outline:1px solid #13241c;" class="form-control" placeholder="Email Id"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary"
+                    style="color: antiquewhite;  background-color: #365913; border-top-right-radius: 30px;border-bottom-right-radius: 30px;"
+                    type="button" id="button-addon2">Subscribe</button>
+            </div>
+        </div>
+        <div class="main6">
+            <footer>
+                <div class="lastContainer">
+                    <div class="sec aboutus">
+                        <h2 style="font-size: 40px; font-weight: 500">Eco-Friendly-Product-Finder</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe sed cupiditate repudiandae
+                            fugit iste quas recusandae quos porro soluta necessitatibus quod, corporis ullam, sapiente
+                            quibusdam quasi eaque vitae odio?</p>
+                        <ul class="sci">
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="sec quicklink">
+                        <h2>Support</h2>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+
+                            <li><a href="Barter.html">Facility</a></li>
+                            <li><a href="Contact.html">Help</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklink">
+                        <h2>Shop</h2>
+                        <ul><li><a href="personal_care.html">personal care</a></li>
+                            <li><a href="kitchen_essentials.html">kitchen household</a></li>
+                            <li><a href="Electronics.html">elctronics</a></li>
+                            <li><a href="office-supplies.html">office</a></li>
+                            <li><a href="gardening-outdoor.html">gardening-outdoor</a></li>
+                            <li><a href="travel.html">travel</a></li>
+                            <li><a href="clothing_and_accessories.html">clothing & accessories</a></li>
+            
+                        </ul>
+                   
+
+                    </div>
+                    <div class="sec contact">
+                        <h2>Contact Us</h2>
+                        <ul class="info">
+                            <li><span><i class="bi bi-telephone-fill"></i></span><p>
+                            <a href="Contact.html">9911124378</a></p></li>
+                            <li><span><i class="bi bi-telephone-fill"></i></span><p>
+                                <a href="Contact.html">9873496767</a></p></li>
+                                <li><span><i class="bi bi-telephone-fill"></i></span><p>
+                                    <a href="Contact.html">9205520265</a></p></li>
+                            
+                            <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
+                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGKZjmsKGjBSdCRjqMxKDhDSCQFjSmkptVXwbjNGDdwflxXhlcBSmGDpJSDHhZCJSvXGKsz">deepibhatt03@gmail.com</a></p></li>
+                                <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
+                                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDvfcvwlgJnRjRPqhZztZCpPWvFgWDfcpwRdQbhgCMvbXqVtDZNNxTZMprzPlhXLtfnFfZq">aggarwaldisha26@gmail.com</a></p></li>
+                                    <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
+                                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWstsBfVQVCflrlCsLDPsQtNxBbgbPFTqHtMtJNXBfbGnxTHXDCQKHVPCSGSlSpTxSNndtPRb">pranita2413@gmail.com</a></p></li>
+                                    
+                        </ul>
+                    </div>
+
+                </div>
+
+            </footer>
+            <div class="copyrightText">
+                <hr>
+                <p>CopyRight 2024 Eco-Friendly-Product-Finder || All Right Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="Home.js"></script>
+    <script>let ScrollContainer = document.querySelector(".essential");
+        let nextbtn = document.getElementById("nextbtn");
+        let backbtn = document.getElementById("backbtn");
+
+        ScrollContainer.addEventListener("zoom", (evt) => {
+            evt.preventDefault();
+            ScrollContainer.scrollLeft += evt.deltay;
+            ScrollContainer.style.scrollBehavior = "auto";
+
+        })
+        nextbtn.addEventListener("click", () => {
+            ScrollContainer.style.scrollBehavior = "smooth";
+            ScrollContainer.scrollLeft += 500;
+
+        })
+        backbtn.addEventListener("click", () => {
+            ScrollContainer.style.scrollBehavior = "smooth";
+            ScrollContainer.scrollLeft -= 500;
+
+        });
+
+
+    </script>
+    <script src="product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
