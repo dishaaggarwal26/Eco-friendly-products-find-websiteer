@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Household Items</title>
-    <link rel="stylesheet" href="product.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EFPF|eco-friendly products finder website</title>
+        <link rel="icon" href="EFPFlogo.png">
+        <link rel="stylesheet" href="product.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b1e10af6f9.js" crossorigin="anonymous"></script>
+    </head>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-
-<body class="body">
-    <div class="product-back">
-        <div class="container ">
+    <body class="body">
+        <div class="header">
+            <div class="container-head">
+                <div><a href="index.html" class="logo-div"><img src="EFPFlogo.png" height="50px" width="50px" class="logo">
+                        <p class="logo-text"> EFPF </p>
+                    </a></div>
+                <div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ba9717;"></i>
+                    </div>
+                    <div class="cart-dropdown" id="cartDropdown">
+                        <h2 class="text-center">Shopping Cart</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Cart items will be dynamically added here -->
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+                        </div>
+                        <div class="text-end mt-2">
+                            <button class="btn btn-primary">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="product-back">
+                <div class="container ">
 
 
             <div class="card mb-3" style="width:100% ">
@@ -35,614 +72,729 @@
                                 style="background-color: rgb(179, 140, 176); width: 120px; margin-top: 15px; border-radius: 15px;"
                                 role="button">See Products</a>
 
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Description</p>
-                            <p class="card-text" style="font-size: 18px;">
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Description</p>
+                                    <p class="card-text" style="font-size: 18px;">
 
-                                Eco-friendly household items are products designed to minimize environmental impact
-                                through sustainable materials, energy efficiency, and reduced waste. These items often
-                                use natural or recycled materials, avoid harmful chemicals, and are designed for
-                                durability and long-term use.
-                                Eco-friendly household products are designed to have a minimal environmental impact,
-                                focusing on sustainability, resource efficiency, and reduced waste. These products often
-                                incorporate natural, renewable, or recycled materials, and are created with processes
-                                that prioritize environmental conservation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr style="border: 5px double rgb(0, 82, 100);">
-    <h2 class="product-heading">PRODUCTS</h2>
-
-
-    <div class="item-body-back">
-        <div class="container div-height item-back" id="products">
-
-
-            <div class="card mb-3" style="width:100% ">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://m.media-amazon.com/images/I/31Dd4bULsXL._SX300_SY300_QL70_FMwebp_.jpg"
-                            style="width: 100%; height: 100%;" alt="product">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="margin-left: 30px;">
-                            <p class="h1" style=" color: rgb(19, 107, 25);">Reusable Bags </p>
-                            <h3 style="font-size: 25px;">
-                                Household Items Product
-                                <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
-                            </h3>
-                            <div>
-                                <span class="a-price-symbol">₹</span>
-                                <span class="a-price-whole" style="font-size: 25px; color: black;">1,100</span>
+                                        Eco-friendly household items are products designed to minimize environmental
+                                        impact
+                                        through sustainable materials, energy efficiency, and reduced waste. These items
+                                        often
+                                        use natural or recycled materials, avoid harmful chemicals, and are designed for
+                                        durability and long-term use.
+                                        Eco-friendly household products are designed to have a minimal environmental
+                                        impact,
+                                        focusing on sustainability, resource efficiency, and reduced waste. These
+                                        products
+                                        often
+                                        incorporate natural, renewable, or recycled materials, and are created with
+                                        processes
+                                        that prioritize environmental conservation.
+                                    </p>
+                                </div>
                             </div>
-                            <a class="btn btn-primary" href="https://amzn.in/d/02UC1dHv"
-                                style="background-color: rgb(218, 81, 57);; width: 100px; margin-top: 15px; border-radius: 15px;"
-                                role="button">BUY NOW</a>
-
-                            <a class="btn btn-primary" href="#"
-                                style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;"
-                                role="button">Add To Cart</a>
-
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Product Description</p>
-                            <p class="card-text">Made of Waterproof Paper
-                                Fully Biodegradable ( Better then the plastic covers )
-                                Just Put the product in the bag - Remove the sticker - Fold & Stick It - Dispose it
-                                Big Enough to put any other product to be disposed also</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
-            <div class="content">
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/61HVDFsLBRL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable cotton bag
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.732</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/61t0VN36wYL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Cloth carry bag
-                        <li class="list-group-item" style="text-align: center;">Rs.669</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
+            <hr style="border: 5px double rgb(0, 82, 100);">
+            <h2 class="product-heading">PRODUCTS</h2>
 
 
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/51eppIazPhL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Fabric tote bag</li>
-                        <li class="list-group-item" style="text-align: center;">Rs.459</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/71gkP1d+zTL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Foldable Bags</li>
-                        <li class="list-group-item" style="text-align: center;">Rs.390</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="item-body-back">
-        <div class="container div-height item-back">
+            <div class="item-body-back">
+                <div class="container div-height item-back" id="products">
 
 
-            <div class="card mb-3" style="width:100% ">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://m.media-amazon.com/images/I/714A0-PwbJL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg"
-                            style="width: 100%; height: 100%; ;" alt="product" ;>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="margin-left: 30px;">
-
-                            <p class="h1" style=" color: rgb(19, 107, 25);">Beeswax wraps </p>
-                            <h3 style="font-size: 25px;">
-                                Household Items Product
-                                <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
-                            </h3>
-                            <div>
-                                <span class="a-price-symbol">₹</span>
-                                <span class="a-price-whole" style="font-size: 25px; color: black;">510</span>
+                    <div class="card mb-3" style="width:100% ">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/31Dd4bULsXL._SX300_SY300_QL70_FMwebp_.jpg"
+                                    style="width: 100%; height: 100%;" alt="product">
                             </div>
-                            <a class="btn btn-primary" href="https://amzn.in/d/03qywdTe"
-                                style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
-                                role="button">BUY NOW</a>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 30px;">
+                                    <p class="h1" style=" color: rgb(19, 107, 25);">Reusable Bags </p>
+                                    <h3 style="font-size: 25px;">
+                                        Household Items Product
+                                        <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                    </h3>
+                                    <div>
+                                        <span class="a-price-symbol">₹</span>
+                                        <span class="a-price-whole" style="font-size: 25px; color: black;">1,100</span>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://amzn.in/d/02UC1dHv"
+                                        style="background-color: rgb(218, 81, 57);; width: 100px; margin-top: 15px; border-radius: 15px;"
+                                        role="button">BUY NOW</a>
 
-                            <a class="btn btn-primary" href="#"
-                                style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;"
-                                role="button">Add To Cart</a>
+                                    <button class="btn btn-primary add-to-cart" data-name="reusable bags"
+                                        data-price="1100"
+                                        data-image="https://m.media-amazon.com/images/I/31Dd4bULsXL._SX300_SY300_QL70_FMwebp_.jpg"
+                                        style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                        To Cart</button>
 
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Product Description</p>
-                            <p class="card-text">This set of 3 is made using Certified Organic cotton fabric printed
-                                with herbal dyes, natural pure unbleached beeswax, organic cold pressed coconut oil and
-                                natural tree dammar gum.The wraps are washable and can be reused as many as 100 times.
-                                Use and Care instructions are on the product sleeve.
-                                Use them to wrap cut fruit and vegetabes, cheese, roti, idli and dosa or to cover a
-                                bowl. The wrap moulds and sticks to surfaces when pressed with the warmth of your hands.
-                                The wrap protects food from the external environment while at the same time allows food
-                                to breathe. Hot and warm foods should be bought to room temperature before being wrapped
-                                in Madhu Wrap.
-                                Keeps food fresher for longer in the refrigerator or in a snack or lunch box
-                                Beeswax and Coconut oil are both antibacterial and anti fungal keeping food safer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
-            <div class="content">
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://images-eu.ssl-images-amazon.com/images/I/6123rXP15OS._AC_UL232_SR232,232_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Hoopoe beeswax wrap
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.480</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://images-eu.ssl-images-amazon.com/images/I/71ru1Y0sZWL._AC_UL232_SR232,232_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">cotton beeswax wrap
-
-                        <li class="list-group-item" style="text-align: center;">Rs.435</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/313TKpcKWkL._AC_UF480,480_SR480,480_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Last Forest cotton
-                            beeswax wrap
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.299</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/816mbJg3aLL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Re-usable beeswax
-                            wrap
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.4,198</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="item-body-back">
-        <div class="container div-height item-back">
-
-
-            <div class="card mb-3" style="width:100% ">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://m.media-amazon.com/images/I/51hbcrzHJ8L._SX300_SY300_QL70_FMwebp_.jpg"
-                            style="width: 100%; height: 100%;" alt="product">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="margin-left: 30px;">
-                            <p class="h1" style=" color: rgb(19, 107, 25);">Eco-friendly cleaning products </p>
-                            <h3 style="font-size: 25px;">
-                                Household Items Product
-                                <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
-                            </h3>
-                            <div>
-                                <span class="a-price-symbol">₹</span>
-                                <span class="a-price-whole" style="font-size: 25px; color: black;">449</span>
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Product Description</p>
+                                    <p class="card-text">Made of Waterproof Paper
+                                        Fully Biodegradable ( Better then the plastic covers )
+                                        Just Put the product in the bag - Remove the sticker - Fold & Stick It - Dispose
+                                        it
+                                        Big Enough to put any other product to be disposed also</p>
+                                </div>
                             </div>
-                            <a class="btn btn-primary" href="https://amzn.in/d/053Nx46d"
-                                style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
-                                role="button">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                    <div class="content">
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/61HVDFsLBRL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
 
-                            <a class="btn btn-primary" href="#"
-                                style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;"
-                                role="button">Add To Cart</a>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable
+                                    cotton
+                                    bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.732</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="reusable cotton bag" data-price="732" data-image="https://m.media-amazon.com/images/I/61HVDFsLBRL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
 
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Product Description</p>
-                            <p class="card-text"> Sovi Multi-purpose Vinegar Cleaner is a lab tested and Proprietary
-                                formula. Non-toxic, Eco-friendly, Pet Safe, Child Safe formula. 3-in-1 Action. Cleans,
-                                Disinfects and Deodorizes. Advanced high efficiency cleaning formula that removes tough
-                                stains, grease and odour.
-                                SOVI Vinegar Cleaner removes limescale, soap scums and hard water stains from taps,
-                                showers heads, sinks, bathtub and tiles. Kitchen - Cleans tiles, sinks, stove, hubs and
-                                chimney filters. Appliances - Deodorizes and cleans kitchen appliances such as
-                                refrigerator, microwave, toaster. Brightens and cleans windows, mirrors and glass
-                                surfaces
-                                Removes pet urine odour. Just dilute in water and mop the area. Spray on areas that have
-                                pet odour and wipe.
-                                Quickly absorbs smells in kitchens, dustbin, refrigerators, dishwashers, and more.
-                                No harsh Chemicals such as Ammonia, Bleach and Acid. Ecologically safe and
-                                bio-degradable formula.
-                            </p>
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/61t0VN36wYL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Cloth carry
+                                    bag
+                                <li class="list-group-item" style="text-align: center;">Rs.669</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="cloth carry bag" data-price="669" data-image="https://m.media-amazon.com/images/I/61t0VN36wYL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/51eppIazPhL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Fabric tote
+                                    bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.459</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="fabric tote bag" data-price="459" data-image="https://m.media-amazon.com/images/I/51eppIazPhL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/71gkP1d+zTL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Foldable Bags
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.390</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="foldable bags" data-price="390" data-image="https://m.media-amazon.com/images/I/71gkP1d+zTL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
-            <div class="content">
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/71ezv9SUYrL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
 
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Natural Floor cleaner
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.119</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/71XFNwNHhQL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Glass cleaner
-                            Capsules
-
-                        <li class="list-group-item" style="text-align: center;">Rs.425</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/41ZZ5tC5JtL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Organic toilet
-                            cleaner</li>
-                        <li class="list-group-item" style="text-align: center;">Rs.179</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/61D+LN2PmIL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable kitchen
-                            Towel
-
-                        <li class="list-group-item" style="text-align: center;">Rs.244</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/61YYsFpbxoL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Organic Dishwash
-                            Liquid
-
-                        <li class="list-group-item" style="text-align: center;">Rs.249</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="item-body-back">
-        <div class="container div-height item-back">
+            <div class="item-body-back">
+                <div class="container div-height item-back">
 
 
-            <div class="card mb-3" style="width:100% ">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://m.media-amazon.com/images/I/41aOybmWLqL._SY445_SX342_QL70_FMwebp_.jpg"
-                            style="width: 100%; height: 100%;" alt="product">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="margin-left: 30px;">
-                            <p class="h1" style=" color: rgb(19, 107, 25);">Compostable trash bags </p>
-                            <h3 style="font-size: 25px;">
-                                Household Items Product
-                                <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
-                            </h3>
-                            <div>
-                                <span class="a-price-symbol">₹</span>
-                                <span class="a-price-whole" style="font-size: 25px; color: black;">249</span>
+                    <div class="card mb-3" style="width:100% ">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/714A0-PwbJL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg"
+                                    style="width: 100%; height: 100%; ;" alt="product" ;>
                             </div>
-                            <a class="btn btn-primary" href="https://amzn.in/d/0a2ztqfZ"
-                                style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
-                                role="button">BUY NOW</a>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 30px;">
 
-                            <a class="btn btn-primary" href="#"
-                                style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;"
-                                role="button">Add To Cart</a>
+                                    <p class="h1" style=" color: rgb(19, 107, 25);">Beeswax wraps </p>
+                                    <h3 style="font-size: 25px;">
+                                        Household Items Product
+                                        <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                    </h3>
+                                    <div>
+                                        <span class="a-price-symbol">₹</span>
+                                        <span class="a-price-whole" style="font-size: 25px; color: black;">510</span>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://amzn.in/d/03qywdTe"
+                                        style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                        role="button">BUY NOW</a>
 
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Product Description</p>
-                            <p class="card-text"> BECO Garbage Bags are made from Plastarch Material (PSM), using Corn
-                                Starch and plant friendly raw materials which is 100% environment-friendly. Its
-                                Biodegradable nature enables easy disposal.
-                                Compostable materials are materials that break down completely into non-toxic components
-                                (water, carbon dioxide, and biomass) that will not harm the environment. It can be
-                                composted at Home and Industrial Compost, Decomposes within 2-6 months.
-                                Our Biodegradable Compostable Garbage Bags are Strong and thick containing a Seal in the
-                                bottom to prevent any leakages. Heavy Load Wastes can be easily carried with this
-                                Garbage Bag
-                                Our Garbage Bags can be used for Office, Kitchen, Bathroom, Bedroom, Living Room, Baby
-                                diapers, Car, Pet's litter. It is Suitable for both wet and dry waste.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
-            <div class="content">
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px" o=5&dpr=1.5&pid=1.7
-                        src="https://m.media-amazon.com/images/I/61vLdqzYYjL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
+                                    <button class="btn btn-primary add-to-cart" data-name="beeswax wraps"
+                                        data-price="510"
+                                        data-image="https://m.media-amazon.com/images/I/714A0-PwbJL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg"
+                                        style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                        To Cart</button>
 
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Origami garbage bag
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.189</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/613oGIR2NeL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Biodegradable garbage
-                            bag
-                        <li class="list-group-item" style="text-align: center;">Rs.1,399</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/71O75ZALFBL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Compostable Green Bag
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.249</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/61spMoRwsFL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Leakproof Garbage Bag
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.199</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/51AhkeV+EDL._AC_UL480_FMwebp_QL65_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable
-                            biodegradable garbage bag
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.758</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="item-body-back">
-        <div class="container div-height item-back">
-
-
-            <div class="card mb-3" style="width:100% ">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://m.media-amazon.com/images/I/71tYq86HyZL._SX679_.jpg"
-                            style="width: 100%; height: 100%;" alt="product">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="margin-left: 30px;">
-                            <p class="h1" style=" color: rgb(19, 107, 25);">Energy-efficient light bulbs </p>
-                            <h3 style="font-size: 25px;">
-                                Household Items Product
-                                <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
-                            </h3>
-                            <div>
-                                <span class="a-price-symbol">₹</span>
-                                <span class="a-price-whole" style="font-size: 25px; color: black;">165</span>
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Product Description</p>
+                                    <p class="card-text">This set of 3 is made using Certified Organic cotton fabric
+                                        printed
+                                        with herbal dyes, natural pure unbleached beeswax, organic cold pressed coconut
+                                        oil
+                                        and
+                                        natural tree dammar gum.The wraps are washable and can be reused as many as 100
+                                        times.
+                                        Use and Care instructions are on the product sleeve.
+                                        Use them to wrap cut fruit and vegetabes, cheese, roti, idli and dosa or to
+                                        cover a
+                                        bowl. The wrap moulds and sticks to surfaces when pressed with the warmth of
+                                        your
+                                        hands.
+                                        The wrap protects food from the external environment while at the same time
+                                        allows
+                                        food
+                                        to breathe. Hot and warm foods should be bought to room temperature before being
+                                        wrapped
+                                        in Madhu Wrap.
+                                        Keeps food fresher for longer in the refrigerator or in a snack or lunch box
+                                        Beeswax and Coconut oil are both antibacterial and anti fungal keeping food
+                                        safer
+                                    </p>
+                                </div>
                             </div>
-                            <a class="btn btn-primary" href="https://amzn.in/d/00SQkT9G"
-                                style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
-                                role="button">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                    <div class="content">
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://images-eu.ssl-images-amazon.com/images/I/6123rXP15OS._AC_UL232_SR232,232_.jpg"
+                                class="card-img-top" alt="...">
 
-                            <a class="btn btn-primary" href="#"
-                                style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;"
-                                role="button">Add To Cart</a>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Hoopoe
+                                    beeswax
+                                    wrap
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.480</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="hoopoe beeswax" data-price="480" data-image="https://images-eu.ssl-images-amazon.com/images/I/6123rXP15OS._AC_UL232_SR232,232_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
 
-                            <p class="text-center"
-                                style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
-                                Product Description</p>
-                            <p class="card-text">180-DEGREES WIDE BEAM ANGLE: With 180-degree wide beam angle, the
-                                brightness reaches the farthest corners of your room.
-                                The operating voltage range of this pack of two light bulbs is 100V to 440V AC that
-                                making them apt for spaces with different phase settings. This feature renders it a
-                                reliable option for both homes and commercial spaces.
-                                The High Glo LED bulbs emit a high light output of 100 lumens per watt.
-                                The high-quality LED lamps can withstand a voltage surge up to 4 kV. It makes the
-                                products last even when there is fluctuating power supply.
-                                Step into a greener tomorrow with this pack of two lamps that have no Lead or Mercury.
-                                The lamps are good for you, as well as the planet’s health.
-                                Orient Electric’s bulbs for home is made in India to ensure their superior quality and
-                                longevity.</p>
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://images-eu.ssl-images-amazon.com/images/I/71ru1Y0sZWL._AC_UL232_SR232,232_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">cotton
+                                    beeswax
+                                    wrap
+
+                                <li class="list-group-item" style="text-align: center;">Rs.435</li>
+                                <li class="list-group-item" style="text-align: center;"> <a  data-name="cotton beeswax" data-price="435" data-image="https://images-eu.ssl-images-amazon.com/images/I/71ru1Y0sZWL._AC_UL232_SR232,232_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/313TKpcKWkL._AC_UF480,480_SR480,480_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Last Forest
+                                    cotton
+                                    beeswax wrap
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.299</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="last forest cotton beeswax" data-price="299" data-image="https://m.media-amazon.com/images/I/313TKpcKWkL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/816mbJg3aLL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Re-usable
+                                    beeswax
+                                    wrap
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.4,198</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="reusable beeswax wrap" data-price="4198" data-image="https://m.media-amazon.com/images/I/816mbJg3aLL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="item-body-back">
+                <div class="container div-height item-back">
+
+
+                    <div class="card mb-3" style="width:100% ">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/51hbcrzHJ8L._SX300_SY300_QL70_FMwebp_.jpg"
+                                    style="width: 100%; height: 100%;" alt="product">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 30px;">
+                                    <p class="h1" style=" color: rgb(19, 107, 25);">Eco-friendly cleaning products </p>
+                                    <h3 style="font-size: 25px;">
+                                        Household Items Product
+                                        <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                    </h3>
+                                    <div>
+                                        <span class="a-price-symbol">₹</span>
+                                        <span class="a-price-whole" style="font-size: 25px; color: black;">449</span>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://amzn.in/d/053Nx46d"
+                                        style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                        role="button">BUY NOW</a>
+
+                                    <button class="btn btn-primary add-to-cart" data-name="Eco-Friendly cleaning products"
+                                        data-price="449"
+                                        data-image="https://m.media-amazon.com/images/I/51hbcrzHJ8L._SX300_SY300_QL70_FMwebp_.jpg"
+                                        style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                        To Cart</button>
+
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Product Description</p>
+                                    <p class="card-text"> Sovi Multi-purpose Vinegar Cleaner is a lab tested and
+                                        Proprietary
+                                        formula. Non-toxic, Eco-friendly, Pet Safe, Child Safe formula. 3-in-1 Action.
+                                        Cleans,
+                                        Disinfects and Deodorizes. Advanced high efficiency cleaning formula that
+                                        removes
+                                        tough
+                                        stains, grease and odour.
+                                        SOVI Vinegar Cleaner removes limescale, soap scums and hard water stains from
+                                        taps,
+                                        showers heads, sinks, bathtub and tiles. Kitchen - Cleans tiles, sinks, stove,
+                                        hubs
+                                        and
+                                        chimney filters. Appliances - Deodorizes and cleans kitchen appliances such as
+                                        refrigerator, microwave, toaster. Brightens and cleans windows, mirrors and
+                                        glass
+                                        surfaces
+                                        Removes pet urine odour. Just dilute in water and mop the area. Spray on areas
+                                        that
+                                        have
+                                        pet odour and wipe.
+                                        Quickly absorbs smells in kitchens, dustbin, refrigerators, dishwashers, and
+                                        more.
+                                        No harsh Chemicals such as Ammonia, Bleach and Acid. Ecologically safe and
+                                        bio-degradable formula.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                    <div class="content">
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/71ezv9SUYrL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Natural Floor
+                                    cleaner
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.119</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="natural floor cleaner" data-price="119" data-image="https://m.media-amazon.com/images/I/71ezv9SUYrL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/71XFNwNHhQL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Glass cleaner
+                                    Capsules
+
+                                <li class="list-group-item" style="text-align: center;">Rs.425</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="glass cleaner capsule" data-price="425" data-image="https://m.media-amazon.com/images/I/71XFNwNHhQL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/41ZZ5tC5JtL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Organic
+                                    toilet
+                                    cleaner</li>
+                                <li class="list-group-item" style="text-align: center;">Rs.179</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="organic toilet cleaner" data-price="179" data-image="https://m.media-amazon.com/images/I/41ZZ5tC5JtL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/61D+LN2PmIL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable
+                                    kitchen
+                                    Towel
+
+                                <li class="list-group-item" style="text-align: center;">Rs.244</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="reusable kitchen towel" data-price="244" data-image="https://m.media-amazon.com/images/I/61D+LN2PmIL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/61YYsFpbxoL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Organic
+                                    Dishwash
+                                    Liquid
+
+                                <li class="list-group-item" style="text-align: center;">Rs.249</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="organic dishwasg liquid" data-price="249" data-image="https://m.media-amazon.com/images/I/61YYsFpbxoL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-body-back">
+                <div class="container div-height item-back">
+
+
+                    <div class="card mb-3" style="width:100% ">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/41aOybmWLqL._SY445_SX342_QL70_FMwebp_.jpg"
+                                    style="width: 100%; height: 100%;" alt="product">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 30px;">
+                                    <p class="h1" style=" color: rgb(19, 107, 25);">Compostable trash bags </p>
+                                    <h3 style="font-size: 25px;">
+                                        Household Items Product
+                                        <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                    </h3>
+                                    <div>
+                                        <span class="a-price-symbol">₹</span>
+                                        <span class="a-price-whole" style="font-size: 25px; color: black;">249</span>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://amzn.in/d/0a2ztqfZ"
+                                        style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                        role="button">BUY NOW</a>
+
+                                    <button class="btn btn-primary add-to-cart" data-name="compostable trash bags"
+                                        data-price="249"
+                                        data-image="https://m.media-amazon.com/images/I/41aOybmWLqL._SY445_SX342_QL70_FMwebp_.jpg"
+                                        style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                        To Cart</button>
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Product Description</p>
+                                    <p class="card-text"> BECO Garbage Bags are made from Plastarch Material (PSM),
+                                        using
+                                        Corn
+                                        Starch and plant friendly raw materials which is 100% environment-friendly. Its
+                                        Biodegradable nature enables easy disposal.
+                                        Compostable materials are materials that break down completely into non-toxic
+                                        components
+                                        (water, carbon dioxide, and biomass) that will not harm the environment. It can
+                                        be
+                                        composted at Home and Industrial Compost, Decomposes within 2-6 months.
+                                        Our Biodegradable Compostable Garbage Bags are Strong and thick containing a
+                                        Seal in
+                                        the
+                                        bottom to prevent any leakages. Heavy Load Wastes can be easily carried with
+                                        this
+                                        Garbage Bag
+                                        Our Garbage Bags can be used for Office, Kitchen, Bathroom, Bedroom, Living
+                                        Room,
+                                        Baby
+                                        diapers, Car, Pet's litter. It is Suitable for both wet and dry waste.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                    <div class="content">
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px" 
+                                src="https://m.media-amazon.com/images/I/61vLdqzYYjL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Origami
+                                    garbage
+                                    bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.189</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="origami garbage bag" data-price="189" data-image="https://m.media-amazon.com/images/I/61vLdqzYYjL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/613oGIR2NeL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Biodegradable
+                                    garbage
+                                    bag
+                                <li class="list-group-item" style="text-align: center;">Rs.1,399</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="biodegradable garbage bag" data-price="1399" data-image="https://m.media-amazon.com/images/I/613oGIR2NeL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/71O75ZALFBL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Compostable
+                                    Green
+                                    Bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.249</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="compostable green bag" data-price="249" data-image="https://m.media-amazon.com/images/I/71O75ZALFBL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/61spMoRwsFL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Leakproof
+                                    Garbage
+                                    Bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.199</li>
+                                <li class="list-group-item" style="text-align: center;"> <a  data-name="Leakproof garbage bag" data-price="199" data-image="https://m.media-amazon.com/images/I/61spMoRwsFL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/51AhkeV+EDL._AC_UL480_FMwebp_QL65_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Reusable
+                                    biodegradable garbage bag
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.758</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="reusable biodegradable garbage bag" data-price="758" data-image="https://m.media-amazon.com/images/I/51AhkeV+EDL._AC_UL480_FMwebp_QL65_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
-            <div class="content">
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/31JNL-nzQaL._AC_UF480,480_SR480,480_.jpg"
-                        class="card-img-top" alt="...">
 
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">3 colors T-bulb
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.248</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
+            <div class="item-body-back">
+                <div class="container div-height item-back">
 
+
+                    <div class="card mb-3" style="width:100% ">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://m.media-amazon.com/images/I/71tYq86HyZL._SX679_.jpg"
+                                    style="width: 100%; height: 100%;" alt="product">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 30px;">
+                                    <p class="h1" style=" color: rgb(19, 107, 25);">Energy-efficient light bulbs </p>
+                                    <h3 style="font-size: 25px;">
+                                        Household Items Product
+                                        <small class="text-muted" style=" font-size: 15px;">by EFPF</small>
+                                    </h3>
+                                    <div>
+                                        <span class="a-price-symbol">₹</span>
+                                        <span class="a-price-whole" style="font-size: 25px; color: black;">165</span>
+                                    </div>
+                                    <a class="btn btn-primary" href="https://amzn.in/d/00SQkT9G"
+                                        style="background-color: rgb(218, 81, 57); width: 100px; margin-top: 15px; border-radius: 15px;"
+                                        role="button">BUY NOW</a>
+
+                                    <button class="btn btn-primary add-to-cart" data-name="Energy efficient light bulbs"
+                                        data-price="165"
+                                        data-image="https://m.media-amazon.com/images/I/71tYq86HyZL._SX679_.jpg"
+                                        style="background-color: rgb(218, 81, 57); width: 120px; margin-top: 15px; border-radius: 15px;">Add
+                                        To Cart</button>
+
+                                    <p class="text-center"
+                                        style="color: rgb(83, 76, 59); font-size: xx-large; font-weight: 700;">
+                                        Product Description</p>
+                                    <p class="card-text">180-DEGREES WIDE BEAM ANGLE: With 180-degree wide beam angle,
+                                        the
+                                        brightness reaches the farthest corners of your room.
+                                        The operating voltage range of this pack of two light bulbs is 100V to 440V AC
+                                        that
+                                        making them apt for spaces with different phase settings. This feature renders
+                                        it a
+                                        reliable option for both homes and commercial spaces.
+                                        The High Glo LED bulbs emit a high light output of 100 lumens per watt.
+                                        The high-quality LED lamps can withstand a voltage surge up to 4 kV. It makes
+                                        the
+                                        products last even when there is fluctuating power supply.
+                                        Step into a greener tomorrow with this pack of two lamps that have no Lead or
+                                        Mercury.
+                                        The lamps are good for you, as well as the planet’s health.
+                                        Orient Electric’s bulbs for home is made in India to ensure their superior
+                                        quality
+                                        and
+                                        longevity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size: 30px; color:black; margin-left: 15px;">Related Products</div>
+                    <div class="content">
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/31JNL-nzQaL._AC_UF480,480_SR480,480_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">3 colors
+                                    T-bulb
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.248</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="3-colors t bulb" data-price="248" data-image="https://m.media-amazon.com/images/I/31JNL-nzQaL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/31WrzxlCJ0L._AC_UF480,480_SR480,480_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wifi LED
+                                    smart
+                                    bulbs
+                                <li class="list-group-item" style="text-align: center;">Rs.389</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="wifi led smart bulbs" data-price="389" data-image="https://m.media-amazon.com/images/I/31WrzxlCJ0L._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://m.media-amazon.com/images/I/41cUDCuQbuL._AC_UF480,480_SR480,480_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Motion sensor
+                                    LED
+                                    bulb
+                                </li>
+                                <li class="list-group-item" style="text-align: center;">Rs.299</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="motion sensor led bulbs" data-price="299" data-image="https://m.media-amazon.com/images/I/41cUDCuQbuL._AC_UF480,480_SR480,480_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://images-eu.ssl-images-amazon.com/images/I/71+gif4STGL._AC_UL165_SR165,165_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">
+                                    environment-friendly LED Lamp</li>
+                                <li class="list-group-item" style="text-align: center;">Rs.218</li>
+                                <li class="list-group-item" style="text-align: center;"> <a data-name="environment-friendly led lamp" data-price="218" data-image="https://images-eu.ssl-images-amazon.com/images/I/71+gif4STGL._AC_UL165_SR165,165_.jpg" class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://m.media-amazon.com/images/I/31WrzxlCJ0L._AC_UF480,480_SR480,480_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wifi LED smart bulbs
-                        <li class="list-group-item" style="text-align: center;">Rs.389</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px" src="https://m.media-amazon.com/images/I/41cUDCuQbuL._AC_UF480,480_SR480,480_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Motion sensor LED bulb
-                        </li>
-                        <li class="list-group-item" style="text-align: center;">Rs.299</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-                    <img style=" border-radius: 10px"
-                        src="https://images-eu.ssl-images-amazon.com/images/I/71+gif4STGL._AC_UL165_SR165,165_.jpg"
-                        class="card-img-top" alt="...">
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">environment-friendly LED Lamp</li>
-                        <li class="list-group-item" style="text-align: center;">Rs.218</li>
-                        <li class="list-group-item" style="text-align: center;"> <a href="#" class="card-link"
-                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a></li>
-                    </ul>
-
-                </div>
-
             </div>
         </div>
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXlNHjQzA+AIh8vSLiP6KtxnrFAKe0evoEH1ylcC1VI6C2Pl4KE6oaptl2" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhG5StlNEiPHI4SnHWFp3dP4l9d4K76UUGYheH9jSmXNf4GmNNbWNTxIxOf" crossorigin="anonymous">
+            </script>
+        <script src="product.js">
+        </script>
+    </body>
 
-</body>
-
-</html>
+    </html>
