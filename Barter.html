@@ -6,76 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EFPF|eco-friendly products finder website</title>
     <link rel="icon" href="EFPFlogo.png">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="Barter.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="Barter.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-     
+
     <div class="header">
         <div class="container-head">
-          <a href="Home.html" >  <div class="logo-div"></div>
-                </a>
-                <div class="list">
-                    <ul class="listItems">
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(45, 59, 41) ;" href="Home.html">Home</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;" href="#about">About</a></li>
-                        <li class="item"><a style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="#shop-more">Shop</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;" href="Barter.html">Facility</a></li>
-                        <li class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="Contact.html">Contact</a></li>
-                        <li  class="item"><a  style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"  href="#join">Join</a></li>
-    
-    
-                    </ul>
-                </div>
-         <div class="sideicon"> 
-            <div class="box">
-                <input type="search" placeholder="Search....">
-                <a href="#">
-                    <i class="bi bi-search-heart" style="font-size: 1.5rem; color: rgb(140, 232, 134);">
+            <a href="Home.html">
+                <div class="logo-div"></div>
+            </a>
+            <div class="list">
+                <ul class="listItems">
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(45, 59, 41) ;"
+                            href="Home.html">Home</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#about">About</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#shop-more">Shop</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="Barter.html">Facility</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="Contact.html">Contact</a></li>
+                    <li class="item"><a
+                            style="color: rgb(73, 99, 27); text-decoration: none; font-weight: 600; text-shadow: 1px 2px 3px rgb(39, 70, 29) ;"
+                            href="#join">Join</a></li>
 
-                    </i> </a>
+
+                </ul>
             </div>
-              <div style="margin-bottom: 15px;" class="cart"> 
-                 <div class="cart-icon" id="cartIcon">
-                    <i class="bi bi-cart-check-fill" style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i>
-                                </div>
-                <div class="cart-dropdown" id="cartDropdown">
-                    <h2 class="text-center">Shopping Cart</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="cart-items">
-                            <!-- Cart items will be dynamically added here -->
-                        </tbody>
-                    </table>
-                    <div class="text-end">
-                        <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+            <div class="sideicon">
+                <div class="box">
+                    <input type="search" placeholder="Search....">
+                    <a href="#">
+                        <i class="bi bi-search-heart" style="font-size: 1.5rem; color: rgb(140, 232, 134);">
+
+                        </i> </a>
+                </div>
+                <div style="margin-bottom: 15px;" class="cart">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="bi bi-cart-check-fill" style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i>
                     </div>
-                    <div class="text-end mt-2">
-                        <button class="btn btn-primary">Proceed to Checkout</button>
+                    <div class="cart-dropdown" id="cartDropdown">
+                        <h2 class="text-center">Shopping Cart</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Cart items will be dynamically added here -->
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <strong>Grand Total: ₹<span id="grand-total">0</span></strong>
+                        </div>
+                        <div class="text-end mt-2">
+                            <button class="btn btn-primary">Proceed to Checkout</button>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="profile">
                     <a href="login-signup.html"><i class="bi bi-person-circle"
-                        style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i></a>
+                            style="font-size: 1.5rem; color: rgb(141, 212, 141);"></i></a>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -90,7 +103,7 @@
             <div class="carousel-item active" data-bs-interval="10000">
                 <img src="https://images.unsplash.com/photo-1602262442764-c14f8db98045?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="d-block w-100 " alt="...">
-                <div  class="carousel-caption">
+                <div class="carousel-caption">
                     <h1>Barter System</h1>
                     <p class="h1">Exchange your Household Plastic
                         waste into Eco-Friendly Product In Just One Click.
@@ -102,7 +115,7 @@
             <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://en-media.thebetterindia.com/uploads/2019/09/plastic-waste-management-2.jpg4_.jpg"
                     class="d-block w-100" alt="...">
-                <div  class="carousel-caption">
+                <div class="carousel-caption">
                     <h1>Barter System</h1>
                     <p class="h1">Exchange your Household Plastic
                         waste into Eco-Friendly Product In Just One Click.
@@ -145,11 +158,14 @@
                         <h5 class="card-head">Step-1:</h5>
                         <h5 style="color: rgb(81, 45, 19);" class="card-title">Collect</h5>
 
-                        <p class="card-text">Plastic consumption has grown at a tremendous rate over the past two decades recycling is facing roadblocks due to their non-degradable nature. There are four basic ways in which communities can offer plastic waste collection services for plastic bottles and containers – curbside, drop-off, buy-back or deposit/refund programs.</p>
+                        <p class="card-text">Plastic consumption has grown at a tremendous rate over the past two
+                            decades recycling is facing roadblocks due to their non-degradable nature. There are four
+                            basic ways in which communities can offer plastic waste collection services for plastic
+                            bottles and containers – curbside, drop-off, buy-back or deposit/refund programs.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img style= "margin-top: 70px; height:60vh;"
+                    <img style="margin-top: 70px; height:60vh;"
                         src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2021/02/23/2e18acae-75c4-11eb-8b9d-76c80a88a6d4_image_hires_190941.jpg"
                         class="img-fluid rounded-start" alt="...">
                 </div>
@@ -167,7 +183,13 @@
                         <h5 class="card-head">Step-2:</h5>
                         <h5 style="color: rgb(111, 108, 44);" class="card-title">Select</h5>
 
-                        <p class="card-text"> The design of packaging plays a critical role in its recyclability. We are taking a circular approach to the design of our food packages. Paper-based cartons are already recyclable and recycled where collection, sorting and recycling infrastructure exist. By developing a simplified material structure and increasing the share of paper-based content, we can contribute to increasing recycling and ensure that more of our cartons are transformed into valuable materials and products.</p>      </div>
+                        <p class="card-text"> The design of packaging plays a critical role in its recyclability. We are
+                            taking a circular approach to the design of our food packages. Paper-based cartons are
+                            already recyclable and recycled where collection, sorting and recycling infrastructure
+                            exist. By developing a simplified material structure and increasing the share of paper-based
+                            content, we can contribute to increasing recycling and ensure that more of our cartons are
+                            transformed into valuable materials and products.</p>
+                    </div>
                 </div>
 
             </div>
@@ -180,7 +202,11 @@
                         <h5 class="card-head">Step-3:</h5>
                         <h5 style="color: rgb(255, 123, 187);" class="card-title">Order</h5>
 
-                        <p class="card-text">Collection and disposal of plastic waste has emerged as an important environmental challenge and its recycling is facing roadblocks due to their non-degradable nature. There are four basic ways in which communities can offer plastic waste collection services for plastic bottles and containers – curbside, drop-off, buy-back or deposit/refund programs.
+                        <p class="card-text">Collection and disposal of plastic waste has emerged as an important
+                            environmental challenge and its recycling is facing roadblocks due to their non-degradable
+                            nature. There are four basic ways in which communities can offer plastic waste collection
+                            services for plastic bottles and containers – curbside, drop-off, buy-back or deposit/refund
+                            programs.
 
                         </p>
                     </div>
@@ -205,8 +231,10 @@
                         <h5 class="card-title" style="color: rgb(62, 152, 187);">Get</h5>
 
                         <p class="card-text">Due to this polluted air and water there is a danger of complete
-                            extinction of various rare species of animals and birds. Not only this, but there is also a change in
-                            the global warming of the earth, which increases the earth’s temperature, which in turn causes
+                            extinction of various rare species of animals and birds. Not only this, but there is also a
+                            change in
+                            the global warming of the earth, which increases the earth’s temperature, which in turn
+                            causes
                             the green house effect</p>
                     </div>
                 </div>
@@ -221,9 +249,14 @@
                         <h5 class="card-head">Step-5:</h5>
                         <h5 style="color: rgb(153, 48, 65);" class="card-title">Exchange</h5>
 
-                        <p class="card-text">Our ambition is to create “the world’s most sustainable food package", solely made from responsibly sourced renewable or recycled materials, fully recyclable and carbon neutral1.
+                        <p class="card-text">Our ambition is to create “the world’s most sustainable food package",
+                            solely made from responsibly sourced renewable or recycled materials, fully recyclable and
+                            carbon neutral1.
 
-                            With our four focus areas we aim to enable the use of renewable materials, maximise the value of recycled material, minimise littering and make sure the package of the future is designed for recycling. Explore more and on our journey towards the world’s most sustainable food package below.</p>
+                            With our four focus areas we aim to enable the use of renewable materials, maximise the
+                            value of recycled material, minimise littering and make sure the package of the future is
+                            designed for recycling. Explore more and on our journey towards the world’s most sustainable
+                            food package below.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -237,331 +270,508 @@
     <p class="text-center" style=" margin-top: 20%; font-weight: 700; font-size: 50px;">What Change It Can Bring</p>
 
     <div class="idea">
-<div class="left">       
-      <p class="text-center" style=" text-shadow: 1px 2px 2px black;  margin-top: 40%; color: rgb(137, 137, 37); font-weight:800; font-size: 30px;">Plastic Bags</p>
-</div>
+        <div class="left">
+            <p class="text-center"
+                style=" text-shadow: 1px 2px 2px black;  margin-top: 40%; color: rgb(137, 137, 37); font-weight:800; font-size: 30px;">
+                Plastic Bags</p>
+        </div>
         <div class="text">
-            <p class="h5">As less than 5% of the 1 trillion single-use plastic bags discarded each year gets recycled, consider switching to organic cotton bags, which are free of chemical residues and decompose in landfill within 5 months. Remember to put a reusable bag in your handbag or backpack and car to make sure that you don’t need to buy a new reusable bag every time you go out!</p>
+            <p class="h5">As less than 5% of the 1 trillion single-use plastic bags discarded each year gets recycled,
+                consider switching to organic cotton bags, which are free of chemical residues and decompose in landfill
+                within 5 months. Remember to put a reusable bag in your handbag or backpack and car to make sure that
+                you don’t need to buy a new reusable bag every time you go out!</p>
         </div>
         <div class="right">
-            <p class="text-center" style=" text-shadow: 1px 2px 2px black; margin-top: 40%; color: rgb(49, 57, 43);  font-weight: 700; font-size:30px;">T-Shirt Bags</p>
+            <p class="text-center"
+                style=" text-shadow: 1px 2px 2px black; margin-top: 40%; color: rgb(49, 57, 43);  font-weight: 700; font-size:30px;">
+                T-Shirt Bags</p>
 
-            
+
         </div>
     </div>
-    <p class="text-center" style=" margin-top: 100px;; font-weight: 500; font-size: 30px;">Exchange Plastic To Get New Products</p>
+    <p class="text-center" style=" margin-top: 100px;; font-weight: 500; font-size: 30px;">Exchange Plastic To Get New
+        Products</p>
 
     <table id="shop-more" class="table">
         <thead>
-          <tr>
-            <th scope="col">S.no.</th>
-            <th scope="col">Plastic Waste Weight</th>
-            <th scope="col">Desirable Products</th>
-          </tr>
+            <tr>
+                <th scope="col">S.no.</th>
+                <th scope="col">Plastic Waste Weight</th>
+                <th scope="col">Desirable Products</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>0-1kg</td>
-            <td>crockry set,t-shirt bag,wax spectula</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>1-5kg</td>
-            <td>Bamboo Toothbrush,soap set, natural Shampoo </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>5-10kg</td>
-            <td>composed dustbin,copper water bottle</td>
-            
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>10-15kg</td>
-            <td>Sanitry pads, jute bags , wooden chair</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>15-20kg</td>
-            <td>Personal Care Products</td>
-          </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>0-1kg</td>
+                <td>crockry set,t-shirt bag,wax spectula</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>1-5kg</td>
+                <td>Bamboo Toothbrush,soap set, natural Shampoo </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>5-10kg</td>
+                <td>composed dustbin,copper water bottle</td>
+
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>10-15kg</td>
+                <td>Sanitry pads, jute bags , wooden chair</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>15-20kg</td>
+                <td>Personal Care Products</td>
+            </tr>
 
         </tbody>
-      </table>
-     
-      <p class="text-center" style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(194, 82, 134);">Plastic Product Weight Under < 1kg</p>
-      
-      <div class="content" >
-          
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://salonserve.com/wp-content/uploads/2020/08/s-e1637158420669-600x469.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wax Spatula</li>
-                <li class="list-group-item"  style="text-align: center;"> 
-                    <a data-name="wax-spatula" data-price="0" data-image="https://salonserve.com/wp-content/uploads/2020/08/s-e1637158420669-600x469.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                </li>
-              </ul>
-              
-            </div><div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJU3yoRCNSNGGIpqIycFXLWNX_1SS-jpjSkQ&s" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">T-shirt Bag</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="t-shirt bag" data-price="0" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJU3yoRCNSNGGIpqIycFXLWNX_1SS-jpjSkQ&s" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://th.bing.com/th/id/OIP.gw3XaTwnuT7R23DDbNtb9QHaHa?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Crockery Set</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="crockery set" data-price="0" data-image="https://th.bing.com/th/id/OIP.gw3XaTwnuT7R23DDbNtb9QHaHa?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style= " display: flex; align-items: center; align-items: center; width: 20rem;
+    </table>
+
+    <p class="text-center"
+        style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(194, 82, 134);">Plastic
+        Product Weight Under < 1kg</p>
+
+            <div class="content">
+
+                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                    <img style=" border-radius: 10px"
+                        src="https://salonserve.com/wp-content/uploads/2020/08/s-e1637158420669-600x469.jpg"
+                        class="card-img-top" alt="...">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wax Spatula</li>
+                        <li class="list-group-item" style="text-align: center;">
+                            <a data-name="wax-spatula" data-price="0"
+                                data-image="https://salonserve.com/wp-content/uploads/2020/08/s-e1637158420669-600x469.jpg"
+                                class="card-link add-to-cart"
+                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                    <img style=" border-radius: 10px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJU3yoRCNSNGGIpqIycFXLWNX_1SS-jpjSkQ&s"
+                        class="card-img-top" alt="...">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">T-shirt Bag</li>
+                        <li class="list-group-item" style="text-align: center;">
+                            <a data-name="t-shirt bag" data-price="0"
+                                data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJU3yoRCNSNGGIpqIycFXLWNX_1SS-jpjSkQ&s"
+                                class="card-link add-to-cart"
+                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                    <img style=" border-radius: 10px"
+                        src="https://th.bing.com/th/id/OIP.gw3XaTwnuT7R23DDbNtb9QHaHa?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        class="card-img-top" alt="...">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">Crockery Set</li>
+                        <li class="list-group-item" style="text-align: center;">
+                            <a data-name="crockery set" data-price="0"
+                                data-image="https://th.bing.com/th/id/OIP.gw3XaTwnuT7R23DDbNtb9QHaHa?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                                class="card-link add-to-cart"
+                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="card" style=" display: flex; align-items: center; align-items: center; width: 20rem;
            margin-top: 15%;">
-                <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html" role="button">Shop More</a>
+                    <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html"
+                        role="button">Shop More</a>
+                </div>
+            </div>
+            <p class="text-center"
+                style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(210, 75, 54);">
+                Plastic Product Weight Under < 5kg </p>
+
+                    <div class="content">
+
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://images-na.ssl-images-amazon.com/images/I/91Zcp4PiaCL._AC_SL1500_.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Bamboo
+                                    Toothbrush</li>
+                                <li class="list-group-item" style="text-align: center;">
+                                    <a data-name="bamboo-toothbrush" data-price="0"
+                                        data-image="https://images-na.ssl-images-amazon.com/images/I/91Zcp4PiaCL._AC_SL1500_.jpg"
+                                        class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                </li>
+                            </ul>
+
                         </div>
-      </div>
-      <p class="text-center" style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(210, 75, 54);">Plastic Product Weight Under < 5kg </p>
-      
-      <div class="content" >
-          
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://images-na.ssl-images-amazon.com/images/I/91Zcp4PiaCL._AC_SL1500_.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Bamboo Toothbrush</li>
-                <li class="list-group-item"  style="text-align: center;"> 
-                    <a data-name="bamboo-toothbrush" data-price="0" data-image="https://images-na.ssl-images-amazon.com/images/I/91Zcp4PiaCL._AC_SL1500_.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                </li>
-              </ul>
-              
-            </div><div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://earthbits.com/cdn/shop/articles/Untitled_design_7_800x.png?v=1563567581" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Soap</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="soap" data-price="0" data-image="https://earthbits.com/cdn/shop/articles/Untitled_design_7_800x.png?v=1563567581" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://www.byrdie.com/thmb/YTtbUwh8_h_Kuc5wdqeztVwATJI=/fit-in/1500x1500/filters:no_upscale():max_bytes(150000):strip_icc()/BeautybyEarthOrganicDryShampooPowder-097612eb7a2f4874b78eff76e7345160.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Shampoo</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="shampoo" data-price="0" data-image="https://www.byrdie.com/thmb/YTtbUwh8_h_Kuc5wdqeztVwATJI=/fit-in/1500x1500/filters:no_upscale():max_bytes(150000):strip_icc()/BeautybyEarthOrganicDryShampooPowder-097612eb7a2f4874b78eff76e7345160.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style= " display: flex; align-items: center; align-items: center; width: 20rem;
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://earthbits.com/cdn/shop/articles/Untitled_design_7_800x.png?v=1563567581"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Soap</li>
+                                <li class="list-group-item" style="text-align: center;">
+                                    <a data-name="soap" data-price="0"
+                                        data-image="https://earthbits.com/cdn/shop/articles/Untitled_design_7_800x.png?v=1563567581"
+                                        class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card"
+                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                            <img style=" border-radius: 10px"
+                                src="https://www.byrdie.com/thmb/YTtbUwh8_h_Kuc5wdqeztVwATJI=/fit-in/1500x1500/filters:no_upscale():max_bytes(150000):strip_icc()/BeautybyEarthOrganicDryShampooPowder-097612eb7a2f4874b78eff76e7345160.jpg"
+                                class="card-img-top" alt="...">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Shampoo</li>
+                                <li class="list-group-item" style="text-align: center;">
+                                    <a data-name="shampoo" data-price="0"
+                                        data-image="https://www.byrdie.com/thmb/YTtbUwh8_h_Kuc5wdqeztVwATJI=/fit-in/1500x1500/filters:no_upscale():max_bytes(150000):strip_icc()/BeautybyEarthOrganicDryShampooPowder-097612eb7a2f4874b78eff76e7345160.jpg"
+                                        class="card-link add-to-cart"
+                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="card" style=" display: flex; align-items: center; align-items: center; width: 20rem;
            margin-top: 15%;">
-                <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html" role="button">Shop More</a>
+                            <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html"
+                                role="button">Shop More</a>
                         </div>
-      </div>
-      <p class="text-center" style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(160, 165, 34);">Plastic Product Weight Under < 10kg</p>
-      
-      <div class="content" >
-          
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://www.megateksa.com/media/catalog/product/cache/f479fffe34b916c2b3283e2d283a0c1e/2/2/225965_1.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; "> Eco- Frinedly Dustbin</li>
-                <li class="list-group-item"  style="text-align: center;"> 
-                    <a data-name="eco-friendly dustbin" data-price="0" data-image="https://www.megateksa.com/media/catalog/product/cache/f479fffe34b916c2b3283e2d283a0c1e/2/2/225965_1.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                </li>
-              </ul>
-              
-            </div><div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://th.bing.com/th/id/OIP.DakiD6IHO4nkpPEa3t2ERQHaG3?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Copper Bottle</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="copper bottle" data-price="0" data-image="https://th.bing.com/th/id/OIP.DakiD6IHO4nkpPEa3t2ERQHaG3?rs=1&pid=ImgDetMain" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://th.bing.com/th/id/OIP._ajiNvVWowlBbTSxYtNvpwHaEc?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Natural Spice</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="natural spice" data-price="0" data-image="https://th.bing.com/th/id/OIP._ajiNvVWowlBbTSxYtNvpwHaEc?rs=1&pid=ImgDetMain" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style= " display: flex; align-items: center; align-items: center; width: 20rem;
+                    </div>
+                    <p class="text-center"
+                        style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(160, 165, 34);">
+                        Plastic Product Weight Under < 10kg</p>
+
+                            <div class="content">
+
+                                <div class="card"
+                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                    <img style=" border-radius: 10px"
+                                        src="https://www.megateksa.com/media/catalog/product/cache/f479fffe34b916c2b3283e2d283a0c1e/2/2/225965_1.jpg"
+                                        class="card-img-top" alt="...">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align: center; font-weight: 600; "> Eco-
+                                            Frinedly Dustbin</li>
+                                        <li class="list-group-item" style="text-align: center;">
+                                            <a data-name="eco-friendly dustbin" data-price="0"
+                                                data-image="https://www.megateksa.com/media/catalog/product/cache/f479fffe34b916c2b3283e2d283a0c1e/2/2/225965_1.jpg"
+                                                class="card-link add-to-cart"
+                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="card"
+                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                    <img style=" border-radius: 10px"
+                                        src="https://th.bing.com/th/id/OIP.DakiD6IHO4nkpPEa3t2ERQHaG3?rs=1&pid=ImgDetMain"
+                                        class="card-img-top" alt="...">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">
+                                            Copper Bottle</li>
+                                        <li class="list-group-item" style="text-align: center;">
+                                            <a data-name="copper bottle" data-price="0"
+                                                data-image="https://th.bing.com/th/id/OIP.DakiD6IHO4nkpPEa3t2ERQHaG3?rs=1&pid=ImgDetMain"
+                                                class="card-link add-to-cart"
+                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="card"
+                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                    <img style=" border-radius: 10px"
+                                        src="https://th.bing.com/th/id/OIP._ajiNvVWowlBbTSxYtNvpwHaEc?rs=1&pid=ImgDetMain"
+                                        class="card-img-top" alt="...">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" style="text-align: center; font-weight: 600; ">
+                                            Natural Spice</li>
+                                        <li class="list-group-item" style="text-align: center;">
+                                            <a data-name="natural spice" data-price="0"
+                                                data-image="https://th.bing.com/th/id/OIP._ajiNvVWowlBbTSxYtNvpwHaEc?rs=1&pid=ImgDetMain"
+                                                class="card-link add-to-cart"
+                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="card" style=" display: flex; align-items: center; align-items: center; width: 20rem;
            margin-top: 15%;">
-                <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html" role="button">Shop More</a>
-                        </div>
-      </div>
-      <p class="text-center" style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(194, 82, 134);">Plastic Product Weight Under < 15kg</p>
-      
-      <div class="content" >
-          
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://i.pinimg.com/originals/44/6c/8b/446c8bd9f915857f8ad7c8252899d6ce.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Sanitry 
-                    Pads
-                </li>
-                <li class="list-group-item"  style="text-align: center;"> 
-                    <a data-name="sanitary pads" data-price="0" data-image="https://i.pinimg.com/originals/44/6c/8b/446c8bd9f915857f8ad7c8252899d6ce.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                </li>
-              </ul>
-              
-            </div><div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://i.etsystatic.com/29627963/r/il/fe24cc/3142159551/il_fullxfull.3142159551_ea5n.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Jute Bags</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="jute bags" data-price="0" data-image="https://i.etsystatic.com/29627963/r/il/fe24cc/3142159551/il_fullxfull.3142159551_ea5n.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://i5.walmartimages.com/asr/312a6208-855e-4f31-bb29-137cd0322877_1.91e21a34f6ef587fd8bfbbb2d19b646f.jpeg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Wooden Chair</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="wooden chair" data-price="0" data-image="https://i5.walmartimages.com/asr/312a6208-855e-4f31-bb29-137cd0322877_1.91e21a34f6ef587fd8bfbbb2d19b646f.jpeg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style= " display: flex; align-items: center; align-items: center; width: 20rem;
+                                    <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);"
+                                        href="Home.html" role="button">Shop More</a>
+                                </div>
+                            </div>
+                            <p class="text-center"
+                                style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(194, 82, 134);">
+                                Plastic Product Weight Under < 15kg</p>
+
+                                    <div class="content">
+
+                                        <div class="card"
+                                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                            <img style=" border-radius: 10px"
+                                                src="https://i.pinimg.com/originals/44/6c/8b/446c8bd9f915857f8ad7c8252899d6ce.jpg"
+                                                class="card-img-top" alt="...">
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"
+                                                    style="text-align: center; font-weight: 600; ">Sanitry
+                                                    Pads
+                                                </li>
+                                                <li class="list-group-item" style="text-align: center;">
+                                                    <a data-name="sanitary pads" data-price="0"
+                                                        data-image="https://i.pinimg.com/originals/44/6c/8b/446c8bd9f915857f8ad7c8252899d6ce.jpg"
+                                                        class="card-link add-to-cart"
+                                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To
+                                                        Cart</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="card"
+                                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                            <img style=" border-radius: 10px"
+                                                src="https://i.etsystatic.com/29627963/r/il/fe24cc/3142159551/il_fullxfull.3142159551_ea5n.jpg"
+                                                class="card-img-top" alt="...">
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"
+                                                    style="text-align: center; font-weight: 600; ">Jute Bags</li>
+                                                <li class="list-group-item" style="text-align: center;">
+                                                    <a data-name="jute bags" data-price="0"
+                                                        data-image="https://i.etsystatic.com/29627963/r/il/fe24cc/3142159551/il_fullxfull.3142159551_ea5n.jpg"
+                                                        class="card-link add-to-cart"
+                                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To
+                                                        Cart</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="card"
+                                            style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                            <img style=" border-radius: 10px"
+                                                src="https://i5.walmartimages.com/asr/312a6208-855e-4f31-bb29-137cd0322877_1.91e21a34f6ef587fd8bfbbb2d19b646f.jpeg"
+                                                class="card-img-top" alt="...">
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"
+                                                    style="text-align: center; font-weight: 600; ">Wooden Chair</li>
+                                                <li class="list-group-item" style="text-align: center;">
+                                                    <a data-name="wooden chair" data-price="0"
+                                                        data-image="https://i5.walmartimages.com/asr/312a6208-855e-4f31-bb29-137cd0322877_1.91e21a34f6ef587fd8bfbbb2d19b646f.jpeg"
+                                                        class="card-link add-to-cart"
+                                                        style="text-decoration: none; color: rgb(136, 69, 69);">Add To
+                                                        Cart</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="card" style=" display: flex; align-items: center; align-items: center; width: 20rem;
            margin-top: 15%;">
-                <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html" role="button">Shop More</a>
-                        </div>
-      </div>
-      <p class="text-center" style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(133, 114, 150);">Plastic Product Weight Under < 20kg</p>
-      
-      <div class="content" >
-          
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://theskincareedit.com/.image/t_share/MTU2ODk4MzQ2NDg3NDU3MjI5/best-natural-skincare-products-1jpg.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Skin Care  </li>
-                <li class="list-group-item"  style="text-align: center;"> 
-                    <a data-name="skin care" data-price="0" data-image="https://theskincareedit.com/.image/t_share/MTU2ODk4MzQ2NDg3NDU3MjI5/best-natural-skincare-products-1jpg.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                </li>
-              </ul>
-              
-            </div><div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://do.lolwot.com/wp-content/uploads/2016/02/20-ways-to-make-your-own-natural-personal-care-products-16.jpg" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Body Spray</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="body spray" data-price="0" data-image="https://do.lolwot.com/wp-content/uploads/2016/02/20-ways-to-make-your-own-natural-personal-care-products-16.jpg" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
-              <img style=" border-radius: 10px" src="https://www.garnesguide.com/content/images/2023/06/2--1--24.webp" class="card-img-top" alt="...">
-             
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="text-align: center; font-weight: 600; ">Face Mask</li>
-                <li class="list-group-item"  style="text-align: center;">
-                     <a data-name="face mask" data-price="0" data-image="https://www.garnesguide.com/content/images/2023/06/2--1--24.webp" class="card-link add-to-cart" style="text-decoration: none; color: rgb(136, 69, 69);">Add To Cart</a>
-                    </li>
-              </ul>
-              
-            </div>
-            <div class="card" style= " display: flex; align-items: center; align-items: center; width: 20rem;
+                                            <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);"
+                                                href="Home.html" role="button">Shop More</a>
+                                        </div>
+                                    </div>
+                                    <p class="text-center"
+                                        style="margin-top: 10%; margin-bottom: 5%; font-weight:700; font-size: 45px; color: rgb(133, 114, 150);">
+                                        Plastic Product Weight Under < 20kg</p>
+
+                                            <div class="content">
+
+                                                <div class="card"
+                                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                                    <img style=" border-radius: 10px"
+                                                        src="https://theskincareedit.com/.image/t_share/MTU2ODk4MzQ2NDg3NDU3MjI5/best-natural-skincare-products-1jpg.jpg"
+                                                        class="card-img-top" alt="...">
+
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"
+                                                            style="text-align: center; font-weight: 600; ">Skin Care
+                                                        </li>
+                                                        <li class="list-group-item" style="text-align: center;">
+                                                            <a data-name="skin care" data-price="0"
+                                                                data-image="https://theskincareedit.com/.image/t_share/MTU2ODk4MzQ2NDg3NDU3MjI5/best-natural-skincare-products-1jpg.jpg"
+                                                                class="card-link add-to-cart"
+                                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add
+                                                                To Cart</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="card"
+                                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                                    <img style=" border-radius: 10px"
+                                                        src="https://do.lolwot.com/wp-content/uploads/2016/02/20-ways-to-make-your-own-natural-personal-care-products-16.jpg"
+                                                        class="card-img-top" alt="...">
+
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"
+                                                            style="text-align: center; font-weight: 600; ">Body Spray
+                                                        </li>
+                                                        <li class="list-group-item" style="text-align: center;">
+                                                            <a data-name="body spray" data-price="0"
+                                                                data-image="https://do.lolwot.com/wp-content/uploads/2016/02/20-ways-to-make-your-own-natural-personal-care-products-16.jpg"
+                                                                class="card-link add-to-cart"
+                                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add
+                                                                To Cart</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="card"
+                                                    style="width: 20rem;box-shadow: 2px 3px 4px rgb(74, 69, 69); border-radius: 10px; ">
+                                                    <img style=" border-radius: 10px"
+                                                        src="https://www.garnesguide.com/content/images/2023/06/2--1--24.webp"
+                                                        class="card-img-top" alt="...">
+
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item"
+                                                            style="text-align: center; font-weight: 600; ">Face Mask
+                                                        </li>
+                                                        <li class="list-group-item" style="text-align: center;">
+                                                            <a data-name="face mask" data-price="0"
+                                                                data-image="https://www.garnesguide.com/content/images/2023/06/2--1--24.webp"
+                                                                class="card-link add-to-cart"
+                                                                style="text-decoration: none; color: rgb(136, 69, 69);">Add
+                                                                To Cart</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="card" style=" display: flex; align-items: center; align-items: center; width: 20rem;
            margin-top: 15%;">
-                <a class="btn btn-primary" style="background-color: rgb(183, 102, 45);" href="Home.html" role="button">Shop More</a>
-                        </div>
-      </div>
-      <div id="join" class="newsettler">
-        <p class="h3">News Blogs Products</p>    
-    <div class="input-group mb-3" style="width: 50%;">
-        <input type="email" style="outline:1px solid #13241c;" class="form-control" placeholder="Email Id" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary"  style="color: antiquewhite;  background-color: #365913; border-top-right-radius: 30px;border-bottom-right-radius: 30px;" type="button" id="button-addon2">Subscribe</button>
-      </div>
-        </div>
-        <div class="main6">
-            <footer>
-    <div class="lastContainer">
-        <div class="sec aboutus">
-            <h2 style="font-size: 40px; font-weight: 500">Eco-Friendly-Product-Finder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe sed cupiditate repudiandae fugit iste quas recusandae quos porro soluta necessitatibus quod, corporis ullam, sapiente quibusdam quasi eaque vitae odio?</p>
-        <ul class="sci">
-            <li><a href=""><i class="bi bi-facebook"></i></a></li>
-            <li><a href=""><i class="bi bi-instagram"></i></a></li>
-            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-            <li><a href=""><i class="bi bi-twitter"></i></a></li>
-    
-            
-        </ul>
-        </div>
-        <div class="sec quicklink">
-            <h2>Support</h2>
-            <ul><li><a href="">Privacy Policy</a></li>
-                
-                <li><a href="Barter.html">Facility</a></li>
-                <li><a href="Contact.html">Help</a></li>
-                <li><a href="Home.html">FAQ</a></li>
-           </ul>
-        </div>
-        <div class="sec quicklink">
-            <h2>Shop</h2>
-            <ul><li><a href="personal_care.html">personal care</a></li>
-                <li><a href="kitchen_essentials.html">kitchen household</a></li>
-                <li><a href="clothing_and_accessories.html">clothing & accessories</a></li>
-            </ul>
-       
-        </div>
-         <div class="sec contact">
-            <h2>Contact Us</h2>
-            <ul class="info">
-                <li><span><i class="bi bi-telephone-fill"></i></span><p>
-                <a href="Contact.html">9911124378</a></p></li>
-                
-                <li><span><i class="bi bi-envelope-at-fill"></i></span><p>
-                    <a href="Contact.html">deepibhatt03@gmail.com</a></p></li>
-            </ul>
-        </div>
-        
-    </div>
-    
-        </footer>
-        <div class="copyrightText">
-            <hr>
-            <p>CopyRight 2024 Eco-Friendly-Product-Finder || All Right Reserved</p>
-        </div>
-    </div>
-      <script src="product.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+                                                    <a class="btn btn-primary"
+                                                        style="background-color: rgb(183, 102, 45);" href="Home.html"
+                                                        role="button">Shop More</a>
+                                                </div>
+                                            </div>
+                                            <div id="join" class="newsettler">
+                                                <p class="h3">News Blogs Products</p>
+                                                <div class="input-group mb-3" style="width: 50%;">
+                                                    <input type="email" style="outline:1px solid #13241c;"
+                                                        class="form-control" placeholder="Email Id"
+                                                        aria-label="Recipient's username"
+                                                        aria-describedby="button-addon2">
+                                                    <button class="btn btn-outline-secondary"
+                                                        style="color: antiquewhite;  background-color: #365913; border-top-right-radius: 30px;border-bottom-right-radius: 30px;"
+                                                        type="button" id="button-addon2">Subscribe</button>
+                                                </div>
+                                            </div>
+                                            <div class="main6">
+                                                <footer>
+                                                    <div class="lastContainer">
+                                                        <div class="sec aboutus">
+                                                            <h2 style="font-size: 40px; font-weight: 500">
+                                                                Eco-Friendly-Product-Finder</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Rem saepe sed cupiditate repudiandae fugit iste quas
+                                                                recusandae quos porro soluta necessitatibus quod,
+                                                                corporis ullam, sapiente quibusdam quasi eaque vitae
+                                                                odio?</p>
+                                                            <ul class="sci">
+                                                                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                                                                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                                                                <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                                                                <li><a href=""><i class="bi bi-twitter"></i></a></li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="sec quicklink">
+                                                            <h2>Support</h2>
+                                                            <ul>
+                                                                <li><a href="">Privacy Policy</a></li>
+
+                                                                <li><a href="Barter.html">Facility</a></li>
+                                                                <li><a href="Contact.html">Help</a></li>
+                                                                <li><a href="Home.html">FAQ</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="sec quicklink">
+                                                            <h2>Shop</h2>
+                                                            <ul>
+                                                                <li><a href="personal_care.html">personal care</a></li>
+                                                                <li><a href="kitchen_essentials.html">kitchen
+                                                                        household</a></li>
+                                                                <li><a href="clothing_and_accessories.html">clothing &
+                                                                        accessories</a></li>
+                                                                        <li><a href="household_items.html">household items</a></li>
+                                                                            <li><a href="office-supplies.html">office supplies</a></li>
+                                                                                <li><a href="Electronics.html">electronics
+                                                                    </a></li>
+                                                                                    <li><a href="travel.html">travel</a></li>      
+                                                                                    <li><a href="gardening-outdoor.html">gardening & outdoor</a></li>         
+                                                            </ul>
+
+                                                        </div>
+                                                        <div class="sec contact">
+                                                            <h2>Contact Us</h2>
+                                                            <ul class="info">
+                                                                <li><span><i class="bi bi-telephone-fill"></i></span>
+                                                                    <p>
+                                                                        <a href="Contact.html">9205520265 ,</a>
+                                                                        <a href="Contact.html">9873496767 ,</a>
+                                                                        <a href="Contact.html">9911124378</a>
+                                                                    </p>
+                                                                </li>
+
+                                                            
+                                                                <li><span><i class="bi bi-envelope-at-fill"></i></span>
+                                                                    <p>
+                                                                        <a
+                                                                            href="Contact.html">aggarwaldisha26@gmail.com</a>
+                                                                    </p>
+                                                                    <span><i class="bi bi-envelope-at-fill"></i></span>
+                                                                    <p>
+                                                                        <a href="Contact.html">pranita2413@gmail.com</a>
+                                                                    </p>
+                                                                    <span><i class="bi bi-envelope-at-fill"></i></span>
+                                                                    <p>
+                                                                        <a
+                                                                            href="Contact.html">deepibhatt03@gmail.com</a>
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                </footer>
+                                                <div class="copyrightText">
+                                                    <hr>
+                                                    <p>CopyRight 2024 Eco-Friendly-Product-Finder || All Right Reserved
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <script src="product.js"></script>
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                                                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                                                crossorigin="anonymous"></script>
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                                                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                                                crossorigin="anonymous"></script>
 </body>
 
 </html>
