@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-div {
+    width:70px;
+    background-image: url('EFPFlogo.png');
+    height: 90px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.listItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    margin-left: 20px;
+    color: rgb(41, 72, 24);
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.item:hover {
+list-style: circle;
+text-decoration: underline;
+    font-size: 1.75rem
+}
+
+.container-head {display: flex;
+align-items: center;
+    justify-content: space-evenly;
+}
+.list{
+    margin-left: 150px;
+}
+
+.sideicon{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-left: 150px;
+}
+.box,.cart,.profile{
+    padding: 20px;
+}
+
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+
+    background: aliceblue;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box input {width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.box a .bi {
+    font-size: 20px;
+    color: rgb(141, 230, 141);
+}
+
+.box:hover input {
+    width: 200px;
+
+}
+
+.main {height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ideas {
+    background-position: center;
+    width: 100%;
+    transition: 0.3s;
+    height: 60vh;
+    background-size: cover;
+    background-image: url('https://www.lsretail.com/hs-fs/hubfs/BLOG_ecommerce-sustainability.jpg?width=1239&height=620&name=BLOG_ecommerce-sustainability.jpg');
+}
+
+.ideas:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.head {
+    width: 500px;
+    text-shadow: 1px 2px 2px rgb(59, 55, 55);
+    font-family: sans-serif;
+}
+
+.content {
+    margin-left: 100px;
+}
+.main1 {
+    margin-top:15px;
+    height: 100vh;
+}
+.page2{
+    display: flex;
+    align-items: center;
+}
+.about{
+    margin-top: 30px;
+}
+iframe{
+    width: 400px;
+    height:40vh;
+    border-radius: 20px;
+    box-shadow: 3px 5px 4px black;
+}
+.intro{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: rgb(48, 47, 47);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-shadow: 2px 5px 2.5px rgb(82, 66, 66);
+}
+.outer{
+width: 300px;
+height: 200px;
+border-radius: 5px;
+
+}
+.link{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(117, 115, 114);
+}
+.link:hover{
+    text-decoration: underline;
+}
+.block,.inside{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+.block{
+    box-shadow: 1px 2px 3px rgb(62, 57, 57);
+    margin-left: 50px;
+
+}
+.inside{
+    align-items: center;
+}
+.small{
+      width: 100px;
+    height: 100px;
+}
+.cards{
+    display: flex;
+    margin-top: 50px;
+
+}
+.research{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:20px;
+    min-height: 100vh;
+}
+.gallery{
+    display: grid;
+    gap: 8px;
+    flex-basis: 70%;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-auto-rows:120px;
+}
+.blog{
+    flex-basis: 30%;
+}
+.blogbox{cursor: pointer;
+    background-size: cover;
+    display: flex;
+    background:rgb(56, 52, 52);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    background-position: top;
+    
+  box-shadow: 3px 5px 6px #353434;
+}
+.blogbox:hover{
+  box-shadow: 3px 5px 6px #181515;
+    background-position: center;
+}
+#box-1{
+    grid-row: span 2;
+}
+#box-2{
+    grid-column: span 2;
+}
+
+#box-3{
+    grid-row: span 2;
+}
+#box-4,#box-5{
+    grid-column: span 2;
+}
+.essential{
+    display: flex;
+  
+    overflow-x: scroll;
+}
+.essential div{
+    width: 100%;
+flex: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    grid-gap: 20px;
+    padding: 10px;
+}
+.essential div img{
+    width: 100%;
+    filter: grayscale(10%);
+transition: transform 0.5s;
+border-radius: 10px;
+}
+.gallery-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin: 10% 0;
+width: 90vw;
+}
+#nextbtn, #backbtn{
+    width: 50px;
+    
+    cursor: pointer;
+}
+.essential div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    border-radius: 0;
+    transform: scale(1.1);
+}
+.essential::-webkit-scrollbar
+{
+    display: none;
+
+}
+.box-1{background-position: center;
+    width: 100%;
+    height: 60vh;
+
+border-radius: 10px;   
+ filter: grayscale(20%);
+
+    background-size: cover;
+background-image: url('https://th.bing.com/th/id/OIP.nrf2hMJpcAe99vqqIOjkLAHaEK?w=277&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+background-blend-mode:darken;
+}
+
+.box-2{  background-position: center;
+    width: 100%;    filter: grayscale(20%);
+
+    border-radius: 10px;
+
+    height: 60vh;
+
+    background-size: cover;
+background-image: url('https://th.bing.com/th/id/OIP.pWBGrF5iOzeqREfaueQTqQHaEo?w=243&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+background-blend-mode:hard-light
+}
+
+.box-3{background-image: url("https://www.imageshine.in/uploads/gallery/Nature-Blur-Background-HD-Images-free-Download.jpg");
+    background-position: center;
+    width: 100%;
+    filter: grayscale(20%);
+
+    border-radius: 10px;
+
+    height: 60vh;
+
+    background-size: cover;
+    background-color: aliceblue;
+}
+
+.box-4{  background-position: center;
+    width: 100%;
+    filter: grayscale(20%);
+
+    border-radius: 10px;
+
+    height: 60vh;
+
+    background-size: cover;
+background-image: url('https://th.bing.com/th/id/OIP.pWBGrF5iOzeqREfaueQTqQHaEo?w=243&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+background-blend-mode:hard-light
+}
+
+.box-5{background-image: url("https://c.wallhere.com/photos/b0/ca/flowers_blue_macro_moss_louisiana_natchitoches-859649.jpg!d");
+    background-position: center;
+    width: 100%;    filter: grayscale(20%);
+
+
+    border-radius: 10px;
+
+    height: 60vh;
+
+    background-size: cover;
+    background-color: aliceblue;
+}
+.newsettler{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+.main6{
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    padding: 50px;
+    
+    min-height: 70vh;
+    background: #fffefe;
+}
+.footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+    
+    background: #fffefe;
+
+}
+footer .lastContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+grid-gap: 20px;    }
+footer .lastContainer .sec h2{
+    position: relative;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #353434;
+}
+footer .lastContainer .sec p{
+    color: #403d3d;
+}
+footer .lastContainer .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+footer .lastContainer  .sci li{
+    list-style: none;
+}
+footer .lastContainer .sci li a{
+    width: 36px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 36px;
+    background: #4b6e58;
+    display: grid;
+}
+footer .lastContainer .sci li a:hover{
+    background: rgb(91, 189, 211);
+}
+footer .lastContainer .sci li a i{
+    color: #fffefe;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+footer  .lastContainer .quicklink{
+    position: relative;
+}
+footer  .lastContainer .quicklink ul li{
+    list-style: none;
+}
+footer  .lastContainer .quicklink ul li a{
+    color: #504a4a;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+display: inline-block;
+}
+footer .lastContainer .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .lastContainer .contact .info li span{
+    color: #545151;
+    font-size: 20px;
+}
+
+footer .lastContainer .contact .info li a{
+    color: #555;
+    text-decoration: none;
+}
+.copyrightText{
+    width: 100%;
+    padding: 20px 100px 30px;
+    background: white;
+    text-align: center;
+    color: #565555;
+}
+form{margin-left: 30%;
+    max-width: 550px;
+    border:1px solid #403d3d;
+     border-radius:10px
+}
+
+.form-label{margin-left: 45px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: rgb(103, 103, 46);
+}
+.form-control{
+    width: 500px;
+    margin-left: 10px;
+    border: 1px solid rgb(102, 102, 117);
+
+}
